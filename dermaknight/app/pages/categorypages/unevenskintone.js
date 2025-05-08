@@ -32,7 +32,7 @@ export default function Home() {
   return (
     <div className={styles.auth_container}>
       <header>
-        <h1>(Test) Uneven Skin Tone</h1>
+        <h1>Uneven Skin Tone</h1>
       </header>
 
       <main>
