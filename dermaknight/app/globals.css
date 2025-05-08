@@ -1,10 +1,15 @@
+<<<<<<< HEAD
 .authContainer {
+=======
+.auth-container {
+>>>>>>> origin/Esteban
   padding: 32px;
   max-width: 393px;
   margin: 0 auto;
   text-align: center;
 }
 
+<<<<<<< HEAD
 /* Category Page Styling */
 section {
   padding: 32px;
@@ -30,6 +35,8 @@ header {
 
 /* Variables Etc */
 
+=======
+>>>>>>> origin/Esteban
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -44,6 +51,8 @@ header {
   --color-green: #5B9253;
   --color-yellow: #FFF48D;
   --color-quiz-button: #EAEFFF; 
+  --color-quiz-button-selected: #969DB3;
+  --color-quiz-button-border: #949DB5;
 
 
   --font_main: 'Lexend', sans-serif;
@@ -109,6 +118,7 @@ header {
   line-height: var(--line_h3);
   font-weight: 600;
 }
+<<<<<<< HEAD
 .h3-bold {
   font-size: var(--text_h3_bold);
   line-height: var(--line_h3_bold);
@@ -124,6 +134,23 @@ header {
 .h3-large-bold {
   font-size: var(--text_h3_large_bold);
   line-height: var(--line_h3-_arge_bold);
+=======
+.h3Bold {
+  font-size: var(--text-h3-bold);
+  line-height: var(--line-h3-bold);
+  font-weight: 700;
+}
+
+.h3Large {
+  font-size: var(--text-h3-large);
+  line-height: var(--line-h3-large);
+  font-weight: 600;
+}
+
+.h3LargeBold {
+  font-size: var(--text-h3-large-bold);
+  line-height: var(--line-h3-large-bold);
+>>>>>>> origin/Esteban
   font-weight: 700;
 }
 
@@ -140,6 +167,7 @@ header {
   font-weight: 400;
 }
 
+<<<<<<< HEAD
 .body-bold {
   font-size: var(--text-body_bold);
   line-height: var(--line-body_bold);
@@ -160,6 +188,28 @@ header {
 .body-large-bold {
   font-size: var(--text_body_large);
   line-height: var(--line_body_large);
+=======
+.bodyBold {
+  font-size: var(--text-body-bold);
+  line-height: var(--line-body-bold);
+  font-weight: 600;
+}
+.bodyMedium {
+  font-size: var(--text-body-medium);
+  line-height: var(--line-body-medium);
+  font-weight: 500;
+}
+
+.bodyLarge {
+  font-size: var(--text-body-large);
+  line-height: var(--line-body-large);
+  font-weight: 400;
+}
+
+.bodyLargeBold {
+  font-size: var(--text-body-large);
+  line-height: var(--line-body-large);
+>>>>>>> origin/Esteban
   font-weight: 600;
 }
 
@@ -170,6 +220,7 @@ header {
   font-weight: 400;
 }
 
+<<<<<<< HEAD
 .label-medium {
   font-size: var(--text_label);
   line-height: var(--line_label);
@@ -179,6 +230,17 @@ header {
   .label-small {
     font-size: var(--text_label_small);
     line-height: var(--line_label_small);
+=======
+.labelMedium {
+  font-size: var(--text-label);
+  line-height: var(--line-label);
+  font-weight: 500;
+}
+  
+  .labelSmall {
+    font-size: var(--text-label-small);
+    line-height: var(--line-label-small);
+>>>>>>> origin/Esteban
     font-weight: 400;
   }
   
