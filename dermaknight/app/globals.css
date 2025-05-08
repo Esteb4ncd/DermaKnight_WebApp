@@ -111,7 +111,7 @@
 .body-bold {
   font-size: var(--text-body-bold);
   line-height: var(--line-body-bold);
-  font-weight: 600;
+  font-weight: 700;
 }
 .body-medium {
   font-size: var(--text-body-medium);
@@ -200,4 +200,63 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+
+
+
+
+
+/* styles for signup */ 
+.auth-container {
+  padding: 32px;
+  max-width: 393px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.auth-title {
+  text-align: left;
+  margin: 60px 0 20px 0;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border: 1px;
+  border-bottom: 1px solid #575151; 
+}
+
+.auth-btn {
+  width: 100%;
+  height: 48px;
+  padding: 8px;
+  margin-top: 18px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.auth-btns{
+  margin: 30px auto;
+}
+
+.auth-btn.primary {
+  background-color: #444752;
+  color: #ffffff;
+  border: none;
+}
+
+.auth-btn.primary:hover {
+  background-color: #373a44;
+}
+
+.auth-btn.secondary {
+  background-color: transparent;
+  color: #1C0E13;
+  border: 1px solid #ccc;
 }
