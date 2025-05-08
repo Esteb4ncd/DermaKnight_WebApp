@@ -16,12 +16,12 @@ const ingredients = [
   {
       name: "Vitamin C:",
       image: "/ingredients/image_2.png",
-      description: "Antioxidant that evens out skin tone",
+      description: "Antioxidant that evens out skin tone and boosts collagen production.",
   }, 
   {
       name: "Ceramides:",
       image: "/ingredients/image_1.png",
-      description: "Calms irritation and fades post-acne spots",
+      description: "Calms irritation and fades post-acne spots.",
   }, 
   {
       name: "Retinol:",
@@ -33,15 +33,43 @@ const ingredients = [
 
 export default function Home() {
   return (
-    <div>
-      <header className={styles.header}>
-        <h1>Ingredient Card Test</h1>
+    <div className={styles.auth_container}>
+      <header>
+        <h1>Uneven Skin Tone</h1>
       </header>
 
-      <main className={styles.main}>
-        <section className={styles.ingredient}>
+      <main>
+        <section className={styles.auth_container}>
           {ingredients
             .filter((ingredients) => ingredients.name === "Niacinamide:")
+            .map((ingredients) => {
+              
+              return (
+                <Ingredients
+                  image={ingredients.image}
+                  name={ingredients.name}
+                  description={ingredients.description}
+                />
+              )
+            }
+          )}
+
+{ingredients
+            .filter((ingredients) => ingredients.name === "Vitamin C:")
+            .map((ingredients) => {
+              
+              return (
+                <Ingredients
+                  image={ingredients.image}
+                  name={ingredients.name}
+                  description={ingredients.description}
+                />
+              )
+            }
+          )}
+
+{ingredients
+            .filter((ingredients) => ingredients.name === "Ceramides:")
             .map((ingredients) => {
               
               return (

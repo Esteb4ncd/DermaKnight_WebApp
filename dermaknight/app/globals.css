@@ -1,4 +1,21 @@
+.auth_container {
+  padding: 32px;
+  max-width: 393px;
+  margin: 0 auto;
+  text-align: center;
+}
 
+/* Category Page Styling */
+section {
+  padding: 32px;
+  max-width: 393px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+header {
+  text-align: center;
+}
 
 :root {
   --background: #ffffff;
@@ -17,7 +34,7 @@
 
 
   --font-main: 'Lexend', sans-serif;
-  --text-h1: 40px;
+  --text_h1: 40px;
   --line-h1: 44px;
 
   --text-h2: 34px;
