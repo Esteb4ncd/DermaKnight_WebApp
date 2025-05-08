@@ -261,7 +261,31 @@ a {
 
 .auth-btn.secondary {
   background-color: transparent;
-  color: #1C0E13;
   border: 1px solid #444752;
 }
+
+.auth-links {
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.auth-forgot {
+  background: none;
+  border: none;
+  color: #8f90a6;
+  font-size: 14px;
+  display: block;   
+  text-align: left; 
+  width: 100%;
+  cursor: pointer;
+  padding: 0;
+}
+
+.auth-btn.secondary {
+  background: transparent;
+  border: 1px solid #ccc;
+  color: var(--color-text);
+  outline: none;             /* Just in case */
+}
+
 
