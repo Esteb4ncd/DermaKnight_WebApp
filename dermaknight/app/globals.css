@@ -215,6 +215,10 @@ a {
   text-align: center;
 }
 
+.auth-logo {
+  margin: 0 15px 20px 0;
+}
+
 .auth-title {
   text-align: left;
   margin: 60px 0 20px 0;
@@ -258,5 +262,6 @@ a {
 .auth-btn.secondary {
   background-color: transparent;
   color: #1C0E13;
-  border: 1px solid #ccc;
+  border: 1px solid #444752;
 }
+
