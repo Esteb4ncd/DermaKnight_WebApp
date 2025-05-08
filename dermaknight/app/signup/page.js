@@ -19,48 +19,49 @@ const handleSubmit = (e) => {
 
 // input home page later
     router.push('/');
-  };
+};
 
-  return (
+return (
     <div className="auth-container">
-      <img src="x" alt="DermaKnight mascot" className="x" />
-      <h1 className="auth-subtitle">Create your Account</h1>
-
-      <form onSubmit={handleSubmit} className="auth-form">
-        <input
-          type="text"
-          name="name"
-          placeholder="Your Name"
-          value={form.name}
-          onChange={handleChange}
-          required
-        />
-        <input
-          type="email"
-          name="email"
-          placeholder="Email"
-          value={form.email}
-          onChange={handleChange}
-          required
-        />
-        <input
-          type="password"
-          name="password"
-          placeholder="Password"
-          value={form.password}
-          onChange={handleChange}
-          required
-        />
-
-        <button type="submit" className="auth-btn primary">Sign Up</button>
-        <button
-          type="button"
-          className="auth-btn secondary"
-          onClick={() => router.push('/login')}
-        >
-          Log in
-        </button>
-      </form>
+    
+    <div className="auth-logo">
+    <img src="x" alt="DermaKnight mascot" className="x" />
     </div>
-  );
+
+    <h1 className="auth-title body-bold">Create your Account</h1>
+
+    <form onSubmit={handleSubmit} className="auth-form">
+        <input
+        type="text"
+        name="name"
+        placeholder="Your Name"
+        value={form.name}
+        onChange={handleChange}
+        required
+        />
+        <input
+        type="email"
+        name="email"
+        placeholder="Email"
+        value={form.email}
+        onChange={handleChange}
+        required
+        />
+        <input
+        type="password"
+        name="password"
+        placeholder="Password"
+        value={form.password}
+        onChange={handleChange}
+        required
+        />
+        <div className="auth-btns">
+        <button type="submit" className="auth-btn primary">Sign Up!</button>
+        <button type="button" className="auth-btn secondary" onClick={() => router.push('/login')}>Log in</button>
+        </div>
+    </form>
+    </div>
+);
 }
+
+
