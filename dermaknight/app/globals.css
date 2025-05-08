@@ -86,19 +86,19 @@
   line-height: var(--line-h3);
   font-weight: 600;
 }
-.h3-bold {
+.h3Bold {
   font-size: var(--text-h3-bold);
   line-height: var(--line-h3-bold);
   font-weight: 700;
 }
 
-.h3-large {
+.h3Large {
   font-size: var(--text-h3-large);
   line-height: var(--line-h3-large);
   font-weight: 600;
 }
 
-.h3-large-bold {
+.h3LargeBold {
   font-size: var(--text-h3-large-bold);
   line-height: var(--line-h3-large-bold);
   font-weight: 700;
@@ -117,24 +117,24 @@
   font-weight: 400;
 }
 
-.body-bold {
+.bodyBold {
   font-size: var(--text-body-bold);
   line-height: var(--line-body-bold);
   font-weight: 600;
 }
-.body-medium {
+.bodyMedium {
   font-size: var(--text-body-medium);
   line-height: var(--line-body-medium);
   font-weight: 500;
 }
 
-.body-large {
+.bodyLarge {
   font-size: var(--text-body-large);
   line-height: var(--line-body-large);
   font-weight: 400;
 }
 
-.body-large-bold {
+.bodyLargeBold {
   font-size: var(--text-body-large);
   line-height: var(--line-body-large);
   font-weight: 600;
@@ -147,13 +147,13 @@
   font-weight: 400;
 }
 
-.label-medium {
+.labelMedium {
   font-size: var(--text-label);
   line-height: var(--line-label);
   font-weight: 500;
 }
   
-  .label-small {
+  .labelSmall {
     font-size: var(--text-label-small);
     line-height: var(--line-label-small);
     font-weight: 400;
