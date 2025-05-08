@@ -1,5 +1,6 @@
 // import Image from "next/image";
 import styles from "./page.module.css";
+import Ingredients from "./ui/ingredientCard/ingredientCard";
 
 // my imports:
 // import styles from "ingredientCard.module.css";
@@ -14,9 +15,13 @@ export default function IngredientPage() {
       </header>
 
       <main className={styles.main}>
-        <div className={styles.ingredient__card}>
-
-        </div>
+        <section className={styles.ingredient__card}>
+          return (
+            <Ingredients
+              
+            />
+          );
+        </section>
 
       </main>
 
