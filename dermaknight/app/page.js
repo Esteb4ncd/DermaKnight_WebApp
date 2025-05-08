@@ -39,6 +39,10 @@ export default function Home() {
       </header>
 
       <main>
+        <section>
+        <h2 className={styles.category_subheader}>Overview</h2>
+        </section>
+
         <section className={styles.auth_container}>
           {ingredients
             .filter((ingredients) => ingredients.name === "Niacinamide:")
