@@ -6,32 +6,32 @@
     border-radius: 24px;
     margin: 8px;
     background-color: white;
-    max-width: 400px;
+    max-width: 600px;
     box-shadow: 0 0 0 1px #f0f0f0;
     font-family: Lexend, sans-serif;
 }
 
-.ingredient__image {
+.ingredientImage {
     flex-shrink: 0;
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     overflow: hidden;
     margin-right: 12px;
 }
 
-.ingredient__name {
+.ingredientName {
     font-weight: 700;
     margin-right: 4px;
 }
 
-.ingredient__description {
+.ingredientDescription {
     font-size: 1rem;
     color: #111;
     margin: 0;
     line-height: 1.4;
 }
 
-.card_buttons {
+.cardButtons {
     border:0;
 }

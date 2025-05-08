@@ -1,7 +1,8 @@
+'use client'
 // import Image from "next/image";
 import styles from "./page.module.css";
 import Ingredients from "./ui/ingredientCard/ingredientCard";
-import Link from 'next/link';
+import {useRouter} from 'next/navigation';
 
 
 const ingredients = [
@@ -9,7 +10,7 @@ const ingredients = [
       name: "Niacinamide:",
       image: "/ingredients/image_1.png",
       description: "Helps brighten skin and fade dark marks gently.",
-  }, 
+    }, 
   {
       name: "Vitamin C:",
       image: "/ingredients/image_2.png",
@@ -29,19 +30,22 @@ const ingredients = [
 
 
 export default function Home() {
+  const router = useRouter();
+
+
   return (
-    <div className={styles.auth_container}>
+    <div className={styles.authContainer}>
       <header>
         <h1>(Test) Uneven Skin Tone</h1>
       </header>
 
       <main>
         <section>
-        <h2 className={styles.category_subheader}>Overview</h2>
+        <h2 className={styles.categorySubheader}>Overview</h2>
         </section>
 
-        <section className={styles.auth_container}>
-          <Link href={link}>
+        <section className={styles.authContainer}>
+
             {ingredients
               .filter((ingredients) => ingredients.name === "Niacinamide:")
               .map((ingredients) => {
@@ -51,11 +55,11 @@ export default function Home() {
                     image={ingredients.image}
                     name={ingredients.name}
                     description={ingredients.description}
+                    onClick={() => router.push('/niacinamide')}
                   />
                 )
               }
             )}
-          </Link>
 
 {ingredients
             .filter((ingredients) => ingredients.name === "Vitamin C:")
@@ -63,9 +67,10 @@ export default function Home() {
               
               return (
                 <Ingredients
-                  image={ingredients.image}
-                  name={ingredients.name}
-                  description={ingredients.description}
+                image={ingredients.image}
+                name={ingredients.name}
+                description={ingredients.description}
+                onClick={() => router.push('/vitaminc')}
                 />
               )
             }
@@ -80,6 +85,7 @@ export default function Home() {
                   image={ingredients.image}
                   name={ingredients.name}
                   description={ingredients.description}
+                  onClick={() => router.push('/ceramides')}
                 />
               )
             }

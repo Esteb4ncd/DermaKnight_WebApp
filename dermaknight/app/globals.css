@@ -1,4 +1,4 @@
-.auth_container {
+.authContainer {
   padding: 32px;
   max-width: 393px;
   margin: 0 auto;
@@ -17,9 +17,18 @@ header {
   text-align: center;
 }
 
-.category_subheader {
+.categorySubheader {
   text-align: left;
 }
+
+.cardLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+/* Variables Etc */
 
 :root {
   --background: #ffffff;
