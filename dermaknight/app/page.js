@@ -14,7 +14,7 @@ const ingredients = [
   {
       name: "Vitamin C:",
       image: "/ingredients/image_2.png",
-      description: "Antioxidant that evens out skin tone and boosts collagen production.",
+      description: "Antioxidant that evens out skin tone.",
   }, 
   {
       name: "Ceramides:",
