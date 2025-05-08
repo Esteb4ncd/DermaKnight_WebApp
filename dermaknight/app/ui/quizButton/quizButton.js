@@ -1,18 +1,29 @@
+// 'use client';
+
+// import React from 'react';
+// import styles from './QuizButton.module.css'; 
+
+// export default function QuizButton({ text = "Click Me", isActive, onClick }) {
+//   return (
+//     <button
+//       onClick={onClick}
+//       className={`${styles.toggleButton} ${isActive ? styles.active : ''}`}
+//     >
+//       {text}
+//      {isActive= activeButton === text} 
+//       {onClick= () => handleButtonClick(text)} 
+//     </button>
+//   );
+// }
 'use client';
 
-import React, { useState } from 'react';
-import styles from './QuizButton.module.css'; 
+import React from 'react';
+import styles from './QuizButton.module.css';
 
-export default function QuizButton({ text = "Click Me" }) {
-  const [isActive, setIsActive] = useState(false);
-
-  const toggleColor = () => {
-    setIsActive(!isActive);
-  };
-
+export default function QuizButton({ text = "Click Me", isActive, onClick }) {
   return (
     <button
-      onClick={toggleColor}
+      onClick={onClick}
       className={`${styles.toggleButton} ${isActive ? styles.active : ''}`}
     >
       {text}

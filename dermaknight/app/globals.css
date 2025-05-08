@@ -1,3 +1,10 @@
+.auth-container {
+  padding: 32px;
+  max-width: 393px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -12,6 +19,8 @@
   --color-green: #5B9253;
   --color-yellow: #FFF48D;
   --color-quiz-button: #EAEFFF; 
+  --color-quiz-button-selected: #969DB3;
+  --color-quiz-button-border: #949DB5;
 
 
   --font-main: 'Lexend', sans-serif;
