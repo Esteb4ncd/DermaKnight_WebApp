@@ -6,8 +6,8 @@
 }
 
 /* Category Page Styling */
-section {
-  padding: 32px;
+article, section {
+  padding: 32px 0px 0px 0px;
   max-width: 393px;
   margin: 0 auto;
   text-align: center;
@@ -15,10 +15,6 @@ section {
 
 header {
   text-align: center;
-}
-
-.categorySubheader {
-  text-align: left;
 }
 
 .cardLink {
