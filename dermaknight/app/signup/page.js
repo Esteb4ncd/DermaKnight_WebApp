@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import '../globals.css';
+import Image from 'next/image';
 
 export default function SignupPage() {
 const router = useRouter();
@@ -24,9 +25,7 @@ const handleSubmit = (e) => {
 return (
     <div className="auth-container">
     
-    <div className="auth-logo">
-    <img src="x" alt="DermaKnight mascot" className="x" />
-    </div>
+    <img src="images/logo_name.png" alt="DermaKnight mascot" className="auth-logo" />
 
     <h1 className="auth-title body-bold">Create your Account</h1>
 
