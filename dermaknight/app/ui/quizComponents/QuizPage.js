@@ -1,5 +1,6 @@
 'use client';
 
+import styles from './QuizPage.module.css'; 
 import { useState } from 'react';
 import QuizButton from './QuizButton';
 import { quizQuestions } from '@/app/data/quizData';
@@ -45,11 +46,11 @@ export default function QuizPage() {
           onClick={() => handleButtonClick(option.id)} 
         />
       ))}
-      <div>
-        <button onClick={handlePreviousQuestion} disabled={currentQuestion === 0}>
-          Previous
+      <div className='buttonsContainer'>
+        <button onClick={handlePreviousQuestion} disabled={currentQuestion === 0} className={styles.previousButton}>
+          go back
         </button>
-        <button onClick={handleNextQuestion} disabled={currentQuestion === quizQuestions.length - 1}>
+        <button onClick={handleNextQuestion} disabled={currentQuestion === quizQuestions.length - 1} className={styles.nextButton}>
           Next
         </button>
       </div>
