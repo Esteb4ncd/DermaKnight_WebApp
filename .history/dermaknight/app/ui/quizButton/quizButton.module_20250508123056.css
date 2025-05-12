@@ -1,0 +1,29 @@
+/* Import the shared global styles */
+@import './styles.css'; /* Import styles.css here */
+
+/* More global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  color: green;
+}
+
+
+.toggleButton {
+    background-color: #4CAF50;  /* Green color */
+    color: white;
+    padding: 15px 32px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+  
+.toggleButton.active {
+    background-color: #f44336;  /* Red color */
+    color: white;
+}

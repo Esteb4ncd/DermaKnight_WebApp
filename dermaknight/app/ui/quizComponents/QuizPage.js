@@ -35,9 +35,10 @@ export default function QuizPage() {
   const currentQuestionData = quizQuestions[currentQuestion];
 
   return (
-    <div className='auth-container'>
-      <h1>Question {currentQuestion + 1}</h1>
-      <h2>{currentQuestionData.question}</h2>
+    <div className='auth-container quizContainer'>
+      <p className={`h2 ${styles.quizTitle}`}>Skin Quiz</p>
+      <p className={`h4 ${styles.quizQuestion}`}>{currentQuestionData.question}</p>
+      <p className={`labelSmall ${styles.quizSelectOne}`}>Select One</p>
       {currentQuestionData.options.map((option) => (
         <QuizButton 
           key={option.id}
@@ -46,9 +47,9 @@ export default function QuizPage() {
           onClick={() => handleButtonClick(option.id)} 
         />
       ))}
-      <div className='buttonsContainer'>
+      <div className={styles.buttonsContainer}>
         <button onClick={handlePreviousQuestion} disabled={currentQuestion === 0} className={styles.previousButton}>
-          go back
+           <img src="/quizGraphics/previousButtonQuiz.svg" alt="Previous" />
         </button>
         <button onClick={handleNextQuestion} disabled={currentQuestion === quizQuestions.length - 1} className={styles.nextButton}>
           Next

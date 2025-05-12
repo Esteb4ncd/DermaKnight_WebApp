@@ -1,7 +1,7 @@
 export const quizQuestions = [
   {
     id: 1,
-    question: "Your age range (Select 1)",
+    question: "Your age range",
     options: [
       { id: 'a', text: "13-18" },
       { id: 'b', text: "19-24" },
@@ -25,10 +25,42 @@ export const quizQuestions = [
     id: 3,
     question: "What is your skin type?",
     options: [
-      { id: 'a', text: "Combination: Oily in the T-Zone (forehead, nose) and normal or dry everywhere else" },
-      { id: 'b', text: "Dry: Skin feels tight and dry all-year round and flaking or itching is common" },
-      { id: 'c', text: "Normal: Mild oiliness, dryness or breakouts can appear occasionally" },
-      { id: 'd', text: "Oily: Excess oil all over the face, often causing blocked pores" }
+      {
+        id: 'a',
+        text: (
+          <>
+            <strong>Combination Oily</strong><br />
+            <span className="labelSmall">in the T-Zone (forehead, nose) and normal or dry everywhere else</span>
+          </>
+        )
+      },
+      {
+        id: 'b',
+        text: (
+          <>
+            <strong>Dry</strong><br />
+            <span className="labelSmall">Skin feels tight and dry all-year round and flaking or itching is common</span>
+          </>
+        )
+      },
+      {
+        id: 'c',
+        text: (
+          <>
+            <strong>Normal</strong><br />
+            <span className="labelSmall">Mild oiliness, dryness or breakouts can appear occasionally</span>
+          </>
+        )
+      },
+      {
+        id: 'd',
+        text: (
+          <>
+            <strong>Oily</strong><br />
+            <span className="labelSmall">Excess oil all over the face, often causing blocked pores</span>
+          </>
+        )
+      }
     ],
     correctAnswer: null
   },
