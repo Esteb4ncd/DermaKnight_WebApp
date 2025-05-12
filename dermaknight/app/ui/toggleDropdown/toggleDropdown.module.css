@@ -1,3 +1,7 @@
+.dropdown-container {
+    margin-top: 1rem;
+}
+
 .toggle-button {
     display: flex;
     justify-content: space-between;
@@ -10,17 +14,13 @@
     color: #333;
 }
 
-#dropdownContent {
+.dropdown-content {
     padding: 10px;
     border-top: 1px solid #000;
     font-size: 14px;
 }
 
-.hidden {
-    display: none;
-}
-
-#arrow {
+.arrow {
     transition: transform 0.3s ease;
 }
 

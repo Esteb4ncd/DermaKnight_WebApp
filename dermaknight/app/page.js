@@ -3,7 +3,7 @@
 import styles from "./page.module.css";
 import Ingredients from "./ui/ingredientCard/ingredientCard";
 import {useRouter} from 'next/navigation';
-import toggleDropdown from "./ui/toggleDropdown/toggleDropdown";
+import ToggleDropdown from "./ui/toggleDropdown/toggleDropdown";
 
 const ingredients = [
   {
@@ -47,26 +47,8 @@ const ingredients = [
 export default function Home() {
   const router = useRouter();
 
-//   // Function to toggle the dropdown content
-//   // This function is called when the button is clicked
-//   function toggleDropdown() {
-//   const content = document.getElementById('dropdownContent');
-//   const buttonText = document.getElementById('buttonText');
-//   const arrow = document.getElementById('arrow');
-
-//   content.classList.toggle('hidden');
-//   arrow.classList.toggle('rotated');
-
-//   if (content.classList.contains('hidden')) {
-//     buttonText.textContent = 'Read more';
-//     arrow.textContent = '▶';
-//   } else {
-//     buttonText.textContent = 'Read less';
-//     arrow.textContent = '▼';
-//   }
-// }
-
   return (
+  // Add the Header here
     <div className={styles.authContainer}>
       <header>
         <h1>Niacinamide</h1>
@@ -117,45 +99,7 @@ export default function Home() {
 
 {/* Toggled Section */}
         <section>
-          <div class="dropdown-container">
-            <button class="toggle-button" onclick="toggleDropdown()">
-              <span id="buttonText">Read more</span>
-              <span id="arrow">▶</span>
-            </button>
-
-            <div id="dropdownContent" class="hidden">
-              <h3>Additional Information</h3>
-              <ul>
-                <li>It's water-soluble and found in both food and topical skincare.</li>
-                <li>In the body, it plays a role in energy production and DNA repair.</li>
-              </ul>
-
-              <strong>It plays a role in:</strong>
-              <ul>
-                <li>Reducing inflammation</li>
-                <li>Improving skin barrier function</li>
-                <li>Regulating oil (sebum) production</li>
-                <li>Reducing hyperpigmentation and redness</li>
-              </ul>
-
-              <strong>What it is:</strong>
-              <ul>
-                <li>A water-soluble form of Vitamin B3 (niacin)</li>
-                <li>Found in foods like meat, eggs, green vegetables, and grains</li>
-                <li>Used in skincare for its multi-functional benefits</li>
-                <li>Suitable for most skin types, including sensitive and acne-prone</li>
-              </ul>
-
-              <strong>Why Niacinamide Is Used:</strong>
-              <ul>
-                <li>Strengthens the skin barrier by boosting ceramide production</li>
-                <li>Helps reduce inflammation, redness, and irritation</li>
-                <li>Balances oil production, ideal for oily/acne-prone skin</li>
-                <li>Minimizes the appearance of pores over time</li>
-                <li>Fades dark spots and evens out skin tone</li>
-              </ul>
-            </div>
-        </div>
+          <ToggleDropdown />
         </section>
 
 {/* How It Works Section */}
