@@ -47,24 +47,24 @@ const ingredients = [
 export default function Home() {
   const router = useRouter();
 
-  // Function to toggle the dropdown content
-  // This function is called when the button is clicked
-  function toggleDropdown() {
-  const content = document.getElementById('dropdownContent');
-  const buttonText = document.getElementById('buttonText');
-  const arrow = document.getElementById('arrow');
+//   // Function to toggle the dropdown content
+//   // This function is called when the button is clicked
+//   function toggleDropdown() {
+//   const content = document.getElementById('dropdownContent');
+//   const buttonText = document.getElementById('buttonText');
+//   const arrow = document.getElementById('arrow');
 
-  content.classList.toggle('hidden');
-  arrow.classList.toggle('rotated');
+//   content.classList.toggle('hidden');
+//   arrow.classList.toggle('rotated');
 
-  if (content.classList.contains('hidden')) {
-    buttonText.textContent = 'Read more';
-    arrow.textContent = '▶';
-  } else {
-    buttonText.textContent = 'Read less';
-    arrow.textContent = '▼';
-  }
-}
+//   if (content.classList.contains('hidden')) {
+//     buttonText.textContent = 'Read more';
+//     arrow.textContent = '▶';
+//   } else {
+//     buttonText.textContent = 'Read less';
+//     arrow.textContent = '▼';
+//   }
+// }
 
   return (
     <div className={styles.authContainer}>
@@ -73,6 +73,8 @@ export default function Home() {
       </header>
 
       <main>
+
+{/* Overview Section */}
         <section>
         <h2 style={{ "text-align": "left" }}>Overview</h2>
         <hr style={{ border: "none", borderTop: "1px solid black", margin: "0.4rem 0" }} />
@@ -156,32 +158,38 @@ export default function Home() {
         </div>
         </section>
 
+{/* How It Works Section */}
         <section>
-        <h2 style={{ "text-align": "left" }}>Causes</h2>
-        <hr style={{ border: "none", borderTop: "1px solid black", margin: "0.4rem 0" }} />
-        <ul style={{ "text-align": "left"}}>
-          <li>
-            Too much sun exposure (without sunscreen)
-          </li>
-          <li>
-            Acne healing or picking at pimples
-          </li>
-          <li>
-            Shaving cuts or skin irritation
-          </li>
-          <li>
-            Hormones or aging
-          </li>
-        </ul>
+          <h2 style={{ "text-align": "left" }}>How it Works</h2>
+          <hr style={{ border: "none", borderTop: "1px solid black", margin: "0.4rem 0" }} />
+          <img src="/ingredients/niacinamide.png"></img>
         </section>
 
+{/* Not Recommended Section */}
+        <section className={styles.authContainer}>
+          <h2 style={{ "text-align": "left" }}>Do Not Combine With</h2>
+          <hr style={{ border: "none", borderTop: "1px solid black", margin: "0.4rem 0" }} />
 
+        {["Vitamin C"].map((key) => {
+          const item = ingredients.find((i) => i.name.startsWith(key));
+            return (
+              <Ingredients
+                key={key}
+                image={item.image}
+                name={item.name}
+                description={item.description}
+                onClick={() => router.push(`/${key.toLowerCase().replace(/\s/g, '')}`)}
+              />
+          );
+        })}
+        </section>
 
+{/* Recommended Section */}
         <section className={styles.authContainer}>
         <h2 style={{ "text-align": "left" }}>Recommended Ingredients</h2>
         <hr style={{ border: "none", borderTop: "1px solid black", margin: "0.4rem 0" }} />
 
-        {["Niacinamide", "Vitamin C", "Azelaic Acid"].map((key) => {
+        {["Ceramides"].map((key) => {
           const item = ingredients.find((i) => i.name.startsWith(key));
             return (
               <Ingredients
