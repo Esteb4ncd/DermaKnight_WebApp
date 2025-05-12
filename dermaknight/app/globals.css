@@ -23,6 +23,36 @@ header {
   color: inherit;
 }
 
+/* Ingredients Page Styling */
+.toggle-button {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border: none;
+    background: none;
+    font-size: 16px;
+    padding: 10px 0;
+    cursor: pointer;
+    color: #333;
+}
+
+#dropdownContent {
+    padding: 10px;
+    border-top: 1px solid #000;
+    font-size: 14px;
+}
+
+.hidden {
+    display: none;
+}
+
+#arrow {
+    transition: transform 0.3s ease;
+}
+
+.rotated {
+    transform: rotate(180deg);
+}
 
 
 /* Variables Etc */
