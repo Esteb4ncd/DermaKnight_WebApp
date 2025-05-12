@@ -1,9 +1,9 @@
 'use client'
 // import Image from "next/image";
+import {useRouter} from 'next/navigation';
 import styles from "./page.module.css";
 import Ingredients from "./ui/ingredientCard/ingredientCard";
-import {useRouter} from 'next/navigation';
-import ToggleDropdown from "./ui/toggleDropdown/toggleDropdown";
+import ToggleDropdown from "./ui/toggleDropdown/toggleDropdown.js";
 
 const ingredients = [
   {
