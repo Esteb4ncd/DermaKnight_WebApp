@@ -8,8 +8,9 @@
     background-color: var(  --color-quiz-button);  
     color: var(  --color-text);
     width: 314px;
-    height: 54px;
     margin: 9px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     
     border-bottom: 2px solid var(--color-quiz-button-border);
     border-top: 0;

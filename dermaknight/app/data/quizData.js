@@ -30,7 +30,7 @@ export const quizQuestions = [
         text: (
           <>
             <strong>Combination Oily</strong><br />
-            <span className="labelSmall">in the T-Zone (forehead, nose) and normal or dry everywhere else</span>
+            <span className="labelSmall">in the T-Zone (forehead, nose) and <br /> normal or dry everywhere else</span>
           </>
         )
       },
@@ -39,7 +39,7 @@ export const quizQuestions = [
         text: (
           <>
             <strong>Dry</strong><br />
-            <span className="labelSmall">Skin feels tight and dry all-year round and flaking or itching is common</span>
+            <span className="labelSmall">Skin feels tight and dry all-year round <br />and flaking or itching is common</span>
           </>
         )
       },
@@ -48,7 +48,7 @@ export const quizQuestions = [
         text: (
           <>
             <strong>Normal</strong><br />
-            <span className="labelSmall">Mild oiliness, dryness or breakouts can appear occasionally</span>
+            <span className="labelSmall">Mild oiliness, dryness or breakouts can<br /> appear occasionally</span>
           </>
         )
       },
@@ -57,7 +57,7 @@ export const quizQuestions = [
         text: (
           <>
             <strong>Oily</strong><br />
-            <span className="labelSmall">Excess oil all over the face, often causing blocked pores</span>
+            <span className="labelSmall">Excess oil all over the face, often<br /> causing blocked pores</span>
           </>
         )
       }
