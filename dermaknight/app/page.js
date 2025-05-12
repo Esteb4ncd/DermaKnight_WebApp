@@ -130,22 +130,22 @@ export default function Home() {
 
 {/* Recommended Section */}
         <section className={styles.authContainer}>
-        <h2 style={{ "text-align": "left" }}>Recommended Ingredients</h2>
-        <hr style={{ border: "none", borderTop: "1px solid black", margin: "0.4rem 0" }} />
+          <h2 style={{ "text-align": "left" }}>Recommended Ingredients</h2>
+          <hr style={{ border: "none", borderTop: "1px solid black", margin: "0.4rem 0" }} />
 
-        {["Ceramides"].map((key) => {
-          const item = ingredients.find((i) => i.name.startsWith(key));
+          {/* {["Ceramides".map((key) => {
+            const item = ingredients.find((i) => i.name.startsWith(key));
             return (
               <Ingredients
-                key={key}
-                image={item.image}
-                name={item.name}
-                description={item.description}
-                onClick={() => router.push(`/${key.toLowerCase().replace(/\s/g, '')}`)}
+              key={key}
+              image={item.image}
+              name={item.name}
+              description={item.description}
+              onClick={() => router.push(`/${key.toLowerCase().replace(/\s/g, '')}`)}
               />
-          );
-        })}
-
+            );
+          }) */}
+          
         </section>
       </main>
     </div>
