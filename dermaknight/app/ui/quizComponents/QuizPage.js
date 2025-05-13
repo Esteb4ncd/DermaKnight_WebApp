@@ -34,9 +34,10 @@ export default function QuizPage() {
   };
 
   const currentQuestionData = quizQuestions[currentQuestion];
+  const isSkinToneQuestion = currentQuestionData.id === 2;
 
   return (
-    <div className='auth-container quizContainer'>
+    <div className='auth-container'>
       <div className={styles.progressBarandExitContainer}>
         <ProgressBar 
           currentQuestion={currentQuestion} 
@@ -47,17 +48,21 @@ export default function QuizPage() {
         </button>
       </div>
 
-      <p className={`h2 ${styles.quizTitle}`}>Skin Quiz</p>
-      <p className={`h4 ${styles.quizQuestion}`}>{currentQuestionData.question}</p>
-      <p className={`${styles.labelSmall} ${styles.quizSelectOne}`}>Select One</p>
-      {currentQuestionData.options.map((option) => (
-        <QuizButton 
-          key={option.id}
-          text={option.text} 
-          isActive={activeButton === option.id} 
-          onClick={() => handleButtonClick(option.id)} 
-        />
-      ))}
+      <div className={styles.quizContent}>
+        <p className={`h2 ${styles.quizTitle}`}>Skin Quiz</p>
+        <p className={`h4 ${styles.quizQuestion}`}>{currentQuestionData.question}</p>
+        <p className={`label ${styles.quizSelectOne}`}>Select One</p>
+        {currentQuestionData.options.map((option) => (
+          <QuizButton 
+            key={option.id}
+            text={option.text} 
+            isActive={activeButton === option.id} 
+            onClick={() => handleButtonClick(option.id)}
+            isColorSwatch={isSkinToneQuestion}
+          />
+        ))}
+      </div>
+
       <div className={styles.buttonsContainer}>
         <button 
           onClick={handlePreviousQuestion} 

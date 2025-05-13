@@ -77,4 +77,8 @@
     z-index: 1;
 }
 
+.quizContent {
+    position: relative;
+}
+
 
