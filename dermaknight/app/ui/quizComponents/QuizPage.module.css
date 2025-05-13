@@ -3,6 +3,12 @@
     top: 708;
     left: 0;
     right: 0;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: var(--background);
+
+    z-index: 1000;
 }
 .progressBarandExitContainer{
     display: flex;
@@ -17,11 +23,13 @@
 }
 
 .previousButton {
+
     height: 49px;
     width: 70px;
     border: 1px solid #444752;
     border-radius: 3px;
     background-color: #fff;
+    top:708;
 }
 
 .nextButton {
@@ -51,7 +59,6 @@
 
 .quizSelectOne {
     margin-bottom: 32px; 
-    color: var(--color-labels);
 }
 
 

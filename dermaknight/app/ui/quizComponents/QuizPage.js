@@ -46,7 +46,7 @@ export default function QuizPage() {
 
       <p className={`h2 ${styles.quizTitle}`}>Skin Quiz</p>
       <p className={`h4 ${styles.quizQuestion}`}>{currentQuestionData.question}</p>
-      <p className={`labelSmall ${styles.quizSelectOne}`}>Select One</p>
+      <p className={`${styles.labelSmall} ${styles.quizSelectOne}`}>Select One</p>
       {currentQuestionData.options.map((option) => (
         <QuizButton 
           key={option.id}
