@@ -6,14 +6,15 @@
 }
 .progressBarandExitContainer{
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    fl
+
 
 }
 .exitButton{
     border:0;
     background-color: transparent;
     
+    align-items: end;
 }
 
 .previousButton {

@@ -36,7 +36,7 @@ export default function QuizPage() {
 
   return (
     <div className='auth-container quizContainer'>
-
+      
       <div className={styles.progressBarandExitContainer}>
       <button className={styles.exitButton}>
       <img src="/quizGraphics/exitFromQuiz.svg" alt="Exit Quiz" />

@@ -1,6 +1,6 @@
 'use client';
 
-import styles from './QuizPage.module.css'; 
+// import styles from './QuizPage.module.css'; 
 import { useState } from 'react';
 import QuizButton from './QuizButton';
 import { quizQuestions } from '@/app/data/quizData';

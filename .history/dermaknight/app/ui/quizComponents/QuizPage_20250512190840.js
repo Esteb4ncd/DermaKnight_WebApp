@@ -36,14 +36,13 @@ export default function QuizPage() {
 
   return (
     <div className='auth-container quizContainer'>
-
       <div className={styles.progressBarandExitContainer}>
       <button className={styles.exitButton}>
       <img src="/quizGraphics/exitFromQuiz.svg" alt="Exit Quiz" />
       </button>
       </div>
 
-
+      
       <p className={`h2 ${styles.quizTitle}`}>Skin Quiz</p>
       <p className={`h4 ${styles.quizQuestion}`}>{currentQuestionData.question}</p>
       <p className={`labelSmall ${styles.quizSelectOne}`}>Select One</p>
