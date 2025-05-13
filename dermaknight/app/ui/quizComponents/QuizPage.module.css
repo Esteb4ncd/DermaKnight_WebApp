@@ -1,6 +1,6 @@
 .buttonsContainer {
     position: fixed;
-    bottom: 30;
+    top: 708;
     left: 0;
     right: 0;
 }
@@ -32,12 +32,11 @@
     border-radius: 3px;
     font-size: 20px;
     background-color: var( --color-button-bg);
-    Color: #D9D9D9;
+    Color: var(  --color-button-text)
 
 }
 
 .nextButton:disabled {
-    opacity: 0.5;
     color: var( --color-button-bg);
     background-color: #D9D9D9;
 }

@@ -29,8 +29,8 @@ export const quizQuestions = [
         id: 'a',
         text: (
           <>
-            <strong>Combination Oily</strong><br />
-            <span className="labelSmall">in the T-Zone (forehead, nose) and <br /> normal or dry everywhere else</span>
+            <span className="bodyMedium">Combination Oily</span><br />
+            <span className="labelSmall">In the T-Zone (forehead, nose) and <br /> normal or dry everywhere else</span>
           </>
         )
       },
@@ -38,7 +38,7 @@ export const quizQuestions = [
         id: 'b',
         text: (
           <>
-            <strong>Dry</strong><br />
+            <span className="bodyMedium">Dry</span><br />
             <span className="labelSmall">Skin feels tight and dry all-year round <br />and flaking or itching is common</span>
           </>
         )
@@ -47,7 +47,7 @@ export const quizQuestions = [
         id: 'c',
         text: (
           <>
-            <strong>Normal</strong><br />
+            <span className="bodyMedium">Normal</span><br />
             <span className="labelSmall">Mild oiliness, dryness or breakouts can<br /> appear occasionally</span>
           </>
         )
@@ -56,7 +56,7 @@ export const quizQuestions = [
         id: 'd',
         text: (
           <>
-            <strong>Oily</strong><br />
+            <span className="bodyMedium">Oily</span><br />
             <span className="labelSmall">Excess oil all over the face, often<br /> causing blocked pores</span>
           </>
         )
@@ -87,7 +87,7 @@ export const quizQuestions = [
   },
   {
     id: 6,
-    question: "Which of the following do you think has the most impact on your skin’s health?",
+    question: "Which of the following do you think has the most impact on your skin's health?",
     options: [
       { id: 'a', text: "Hormones" },
       { id: 'b', text: "Stress" },

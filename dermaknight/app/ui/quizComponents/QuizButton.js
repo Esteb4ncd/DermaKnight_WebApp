@@ -7,7 +7,7 @@ export default function QuizButton({ text = "Click Me", isActive, onClick }) {
   return (
     <button
       onClick={onClick}
-      className={`${styles.toggleButton} ${isActive ? styles.active : ''}`}
+      className={`${styles.toggleButton} ${isActive ? styles.active : ''} bodyMedium`}
     >
       {text}
     </button>
