@@ -3,6 +3,7 @@
 import styles from './QuizPage.module.css'; 
 import { useState } from 'react';
 import QuizButton from './QuizButton';
+import ProgressBar from './ProgressBar';
 import { quizQuestions } from '@/app/data/quizData';
 
 export default function QuizPage() {
@@ -36,13 +37,15 @@ export default function QuizPage() {
 
   return (
     <div className='auth-container quizContainer'>
-
       <div className={styles.progressBarandExitContainer}>
-      <button className={styles.exitButton}>
-      <img src="/quizGraphics/exitFromQuiz.svg" alt="Exit Quiz" />
-      </button>
+        <ProgressBar 
+          currentQuestion={currentQuestion} 
+          totalQuestions={quizQuestions.length} 
+        />
+        <button className={styles.exitButton}>
+          <img src="/quizGraphics/exitFromQuiz.svg" alt="Exit Quiz" />
+        </button>
       </div>
-
 
       <p className={`h2 ${styles.quizTitle}`}>Skin Quiz</p>
       <p className={`h4 ${styles.quizQuestion}`}>{currentQuestionData.question}</p>

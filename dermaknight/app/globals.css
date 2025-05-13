@@ -18,6 +18,7 @@
   --color-header-bg: #E0E8FF;
   --color-green: #5B9253;
   --color-yellow: #FFF48D;
+  --primary-color-200: #D4D8E4;
   --color-quiz-button: #EAEFFF; 
   --color-quiz-button-selected: #969DB3;
   --color-quiz-button-border: #949DB5;
@@ -77,6 +78,7 @@
 }
 
 .h2 {
+  font-family: var(--font-main);
   font-size: var(--text-h2);
   line-height: var(--line-h2);
   font-weight: 600;
@@ -106,9 +108,10 @@
 }
 
 .h4 {
+  font-family: var(--font-main);
   font-size: var(--text-h4);
   line-height: var(--line-h4);
-  font-weight: 600;
+  font-weight: 400;
 
 }
 
@@ -156,6 +159,7 @@
 }
   
   .labelSmall {
+    font-family: var(--font-main);
     font-size: var(--text-label-small);
     line-height: var(--line-label-small);
     font-weight: 400;

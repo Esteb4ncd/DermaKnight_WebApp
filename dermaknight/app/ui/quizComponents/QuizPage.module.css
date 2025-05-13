@@ -1,12 +1,12 @@
 .buttonsContainer {
     position: fixed;
-    top: 708;
+    top: 770;
     left: 0;
     right: 0;
     display: flex;
     justify-content: center;
     padding: 20px;
-    background-color: var(--background);
+
 
     z-index: 1000;
 }
@@ -51,6 +51,8 @@
 
 .quizTitle {
     margin-bottom: 40px; 
+    margin-top: 54px;
+    
 }
 
 .quizQuestion {
@@ -59,6 +61,20 @@
 
 .quizSelectOne {
     margin-bottom: 32px; 
+}
+
+.progressBarandExitContainer {
+    position: relative;
+    width: 100%;
+    margin-bottom: 24px;
+    height: 40px;
+}
+
+.exitButton {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
 }
 
 
