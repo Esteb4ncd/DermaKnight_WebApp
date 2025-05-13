@@ -55,7 +55,48 @@ header {
     transform: rotate(180deg);
 }
 
+.chip-container {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  max-width: 393px;
+  margin: 0 auto;
+  padding: 10px 0 0;
+}
 
+.chip {
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #000;
+  display: inline-block;
+}
+
+.chip-blue {
+  background-color: #B3DCFF;
+}
+
+.chip-yellow {
+  background-color: #FFE3B3;
+}
+
+.chip-green {
+  background-color: #C3FFB3;
+}
+
+.padding-md {
+    padding: 20px 0 0;
+}
+
+.padding-sm {
+    padding: 10px 0 0;
+}
+
+.margin-sm {
+    margin: 10px 0 0;
+}
 
 /* Variables Etc */
 

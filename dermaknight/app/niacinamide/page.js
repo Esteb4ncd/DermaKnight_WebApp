@@ -58,8 +58,15 @@ export default function Home() {
             </header>
 
             <main>
+                {/* Chips Section */}
+                <div className="chip-container">
+                    <span className="chip chip-blue">Hydration</span>
+                    <span className="chip chip-yellow">Eczema</span>
+                    <span className="chip chip-green">Skin Barrier</span>
+                </div>
+                
                 {/* Overview Section */}
-                <section>
+                <section className="padding-md">
                     <h2 style={{ "text-align": "left" }}>Overview</h2>
                     <hr
                         style={{
@@ -101,35 +108,23 @@ export default function Home() {
                 </section>
 
                 {/* Toggled Section */}
-                <section>
+                <section  className="padding-md">
                     <ToggleDropdown />
                 </section>
 
                 {/* How It Works Section */}
-                <section>
-                    <h2 style={{ "text-align": "left" }}>How it Works</h2>
-                    <hr
-                        style={{
-                            border: "none",
-                            borderTop: "1px solid black",
-                            margin: "0.4rem 0",
-                        }}
-                    />
+                <section className="padding-sm">
+                    <hr style={{ border: "none", borderTop: "1px solid black", margin: "0.4rem 0", }}/>
+                    <h2 style={{ "text-align": "left", margin: "0.7rem 0 0.7rem 0" }}>How it Works</h2>
+                    <hr style={{ border: "none", borderTop: "1px solid black", margin: "0.4rem 0", }}/>
                     <img src='/ingredients/niacinamide.png'></img>
+                    <hr style={{ border: "none", borderTop: "1px solid black", margin: "0.4rem 0", }}/>
                 </section>
 
                 {/* Not Recommended Section */}
-                <section className="authContainer">
-                    <h2 style={{ "text-align": "left" }}>
-                        Do Not Combine With
-                    </h2>
-                    <hr
-                        style={{
-                            border: "none",
-                            borderTop: "1px solid black",
-                            margin: "0.4rem 0",
-                        }}
-                    />
+                <section className="authContainer padding-sm">
+                    <h2 style={{ "text-align": "left" }}>Do Not Combine With</h2>
+                    <br></br>
 
                     {["Vitamin C"].map((key) => {
                         const item = ingredients.find((i) =>
@@ -154,17 +149,10 @@ export default function Home() {
                 </section>
 
                 {/* Recommended Section */}
-                <section className="authContainer">
-                    <h2 style={{ "text-align": "left" }}>
-                        Recommended Ingredients
-                    </h2>
-                    <hr
-                        style={{
-                            border: "none",
-                            borderTop: "1px solid black",
-                            margin: "0.4rem 0",
-                        }}
-                    />
+                <section className="authContainer padding-md">
+                    <hr style={{ border: "none", borderTop: "1px solid black", margin: "0.4rem 0" }}/>
+                    <h2>Recommended Ingredients</h2>
+                    <br></br>
 
                     {["Ceramides"].map((key) => {
             const item = ingredients.find((i) => i.name.startsWith(key));

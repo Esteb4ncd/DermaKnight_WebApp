@@ -53,8 +53,6 @@ return (
                 <li>Minimizes the appearance of pores over time</li>
                 <li>Fades dark spots and evens out skin tone</li>
             </ul>
-            {/* <br></br> */}
-            <hr style={{ border: "none", borderTop: "1px solid black", margin: "0.4rem 0" }} />
 
         </div>
         )}
