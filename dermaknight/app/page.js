@@ -3,7 +3,7 @@
 import {useRouter} from 'next/navigation';
 import styles from "./page.module.css";
 import Ingredients from "./ui/ingredientCard/ingredientCard";
-import ToggleDropdown from "./ui/toggleDropdown/toggleDropdown.js";
+import ToggleDropdown from "./ui/toggleDropdown/toggleDropdown";
 
 const ingredients = [
   {
@@ -37,7 +37,7 @@ const ingredients = [
       description: "Helps brighten skin and fade dark marks gently.",
   }, 
   {
-    key: 5,
+    key: 6,
       name: "Azelaic Acid:",
       image: "/ingredients/image_1.png",
       description: "Calms irritation and fades post-acne spots.",
@@ -133,7 +133,7 @@ export default function Home() {
           <h2 style={{ "text-align": "left" }}>Recommended Ingredients</h2>
           <hr style={{ border: "none", borderTop: "1px solid black", margin: "0.4rem 0" }} />
 
-          {/* {["Ceramides".map((key) => {
+          {["Ceramides"].map((key) => {
             const item = ingredients.find((i) => i.name.startsWith(key));
             return (
               <Ingredients
@@ -144,7 +144,7 @@ export default function Home() {
               onClick={() => router.push(`/${key.toLowerCase().replace(/\s/g, '')}`)}
               />
             );
-          }) */}
+          })}
           
         </section>
       </main>
