@@ -21,6 +21,7 @@
   --color-quiz-button: #EAEFFF; 
   --color-quiz-button-selected: #969DB3;
   --color-quiz-button-border: #949DB5;
+  
 
 
   --font-main: 'Lexend', sans-serif;
@@ -108,7 +109,7 @@
   font-size: var(--text-h4);
   line-height: var(--line-h4);
   font-weight: 600;
-  
+
 }
 
 /* BODY TEXT */

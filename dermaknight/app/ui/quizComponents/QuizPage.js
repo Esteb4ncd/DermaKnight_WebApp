@@ -56,10 +56,18 @@ export default function QuizPage() {
         />
       ))}
       <div className={styles.buttonsContainer}>
-        <button onClick={handlePreviousQuestion} disabled={currentQuestion === 0} className={styles.previousButton}>
-           <img src="/quizGraphics/previousButtonQuiz.svg" alt="Previous" />
+        <button 
+          onClick={handlePreviousQuestion} 
+          disabled={currentQuestion === 0} 
+          className={styles.previousButton}
+        >
+          <img src="/quizGraphics/previousButtonQuiz.svg" alt="Previous" />
         </button>
-        <button onClick={handleNextQuestion} disabled={currentQuestion === quizQuestions.length - 1} className={styles.nextButton}>
+        <button 
+          onClick={handleNextQuestion} 
+          disabled={!activeButton} 
+          className={styles.nextButton}
+        >
           Next
         </button>
       </div>
