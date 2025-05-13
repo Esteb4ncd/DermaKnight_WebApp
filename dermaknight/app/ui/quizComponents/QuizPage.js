@@ -68,7 +68,7 @@ export default function QuizPage() {
           disabled={!activeButton} 
           className={styles.nextButton}
         >
-          Next
+          {currentQuestion === quizQuestions.length - 1 ? 'Submit' : 'Next'}
         </button>
       </div>
     </div>
