@@ -45,7 +45,7 @@ return (
             </ul>
             <br></br>
 
-            <h4 style={{ "text-align": "left"}}>Why Niacinamide Is Used:</h4>
+            <h4 style={{ "text-align": "left"}}>Why it is Used:</h4>
             <ul style={{ "text-align": "left"}}>
                 <li>Strengthens the skin barrier by boosting ceramide production</li>
                 <li>Helps reduce inflammation, redness, and irritation</li>
