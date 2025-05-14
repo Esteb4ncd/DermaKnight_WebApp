@@ -51,7 +51,7 @@
 
 .quizTitle {
     margin-bottom: 30px; 
-    margin-top: 64px;
+    margin-top: 34px;
     
 }
 
@@ -66,6 +66,7 @@
 .progressBarandExitContainer {
     position: relative;
     width: 100%;
+    margin-bottom: ;
 }
 
 .exitButton {
