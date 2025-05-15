@@ -1,0 +1,17 @@
+.ingredient {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.ingredient__image {
+    width: 100%;
+}
+
+.ingredient__description {
+    font-weight: bold;
+}
+
+.product__priceSale {
+    color: red;
+}

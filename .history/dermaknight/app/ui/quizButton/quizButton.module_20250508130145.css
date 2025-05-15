@@ -1,0 +1,19 @@
+
+
+.toggleButton {
+    background-color: var(  --color-quiz-button);  /* Green color */
+    color: var(  --color-text);
+    width: 314px;
+    height: 54px;
+    margin: 9px;
+    
+    border-bottom: 2px solid var(--color-quiz-button-border);
+    border-top: 0;
+    b
+
+}
+  
+.toggleButton.active {
+    background-color: var(  --color-quiz-button-selected);  /* Red color */
+    color: white;
+}
