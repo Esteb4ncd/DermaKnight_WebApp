@@ -1,0 +1,1 @@
+import quizButton from './ui/quizButton/quizButton';
