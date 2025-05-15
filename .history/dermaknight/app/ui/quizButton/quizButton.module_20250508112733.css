@@ -1,0 +1,14 @@
+.toggle-button {
+    background-color: lightblue;
+    color: tomato;
+  }
+  
+  .toggle-button.active {
+    background-color: lightgreen;
+    color: blue;
+  }
+  p {
+    color: blue;
+    font-size: 20px;
+  }
+  
