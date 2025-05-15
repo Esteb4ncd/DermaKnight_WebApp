@@ -47,7 +47,7 @@ export default function QuizPage() {
           currentQuestion={currentQuestion} 
           totalQuestions={quizQuestions.length} 
         />
-        <button className={styles.exitButton} onClick={() => router.push('/homePage')}>
+        <button className={styles.exitButton} onClick={onClick}>
           <img src="/quizGraphics/exitFromQuiz.svg" alt="Exit Quiz" />
         </button>
       </div>
