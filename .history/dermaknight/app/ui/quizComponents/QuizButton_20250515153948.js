@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import styles from '@/app/ui/quizComponents/QuizButton.module.css'; 
+import styles from '@/app/ui/quizComponents/Q'; 
 
 export default function QuizButton({ text = "Click Me", isActive, onClick, isColorSwatch = false }) {
   return (

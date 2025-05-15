@@ -2,7 +2,7 @@
 import {useRouter} from 'next/navigation';
 
 
-import styles from '@/app/ui/quizComponents/QuizPage.module.css'; 
+import styles from '@/app/ui/quizComponents/'; 
 import { useState } from 'react';
 import QuizButton from './QuizButton';
 import ProgressBar from './ProgressBar';

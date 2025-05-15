@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import styles from '@/app/ui/quizComponents/ProgressBar.module.css';
+import styles from './ProgressBar.module.css';
 
 export default function ProgressBar({ currentQuestion, totalQuestions }) {
   return (
