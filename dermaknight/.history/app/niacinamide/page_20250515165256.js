@@ -4,8 +4,8 @@ import {useRouter} from 'next/navigation';
 
 
 // import styles from "./page.module.css";
-import Ingredients from "@/app/ui/ingredientCard/ingredientCard";
-import ToggleDropdown from "@/app/ui/toggleDropdown/toggleDropdown";
+import Ingredients from '@/app/ui/ingredientCard/ingredientCard.js';
+import ToggleDropdown from '@app/ui/toggleDropdown/toggleDropdown.js';
 
 const ingredients = [
     {
@@ -54,14 +54,14 @@ export default function Home() {
         // Add the Header here
         <div className="authContainer">
             <header>
-                <h1>Retinol</h1>
+                <h1>Niacinamide</h1>
             </header>
 
             <main>
                 {/* Chips Section */}
                 <div className="chip-container">
                     <span className="chip chip-blue">Hydration</span>
-                    {/* <span className="chip chip-yellow">Eczema</span> */}
+                    <span className="chip chip-yellow">Eczema</span>
                     <span className="chip chip-green">Skin Barrier</span>
                 </div>
                 
@@ -79,9 +79,11 @@ export default function Home() {
                         What it is:
                     </p>
                     <ul style={{ "text-align": "left" }}>
+                        <li>A form of Vitamin B3 used in skincare.</li>
                         <li>
-                            A vitamin A derivative that speeds up skin cell turnover and stimulates the production of new skin cells.   
+                            Water-soluble and works wwell for most skin types.
                         </li>
+                        <li>Known for being gentle yet effective.</li>
                     </ul>
                     <br></br>
                     <p style={{ "text-align": "left", "font-weight": "bold" }}>
@@ -89,13 +91,18 @@ export default function Home() {
                     </p>
                     <ul style={{ "text-align": "left" }}>
                         <li>
-                            Speeds up the skin's natural exfoliation process by increasing the rate at which skin cells shed and regenerate.
+                            Strengthens the skin barrier to retain moisture.
                         </li>
+                        <li>Helps reduce redness and inflammation.</li>
                         <li>
-                            Increases collagen production
+                            Regulates oil production, making it great for oily
+                            or acne-prone skin.
                         </li>
+                        <li>Minimizes the appearance of pores over time.</li>
+                        <li>Fades dark spots and improves uneven skin tone.</li>
                         <li>
-                            It helps your skin absorb other product better
+                            Provides antioxidant protection against
+                            environmental stress.
                         </li>
                     </ul>
                 </section>
@@ -110,7 +117,7 @@ export default function Home() {
                     <hr style={{ border: "none", borderTop: "1px solid black", margin: "0.4rem 0", }}/>
                     <h2 style={{ "text-align": "left", margin: "0.7rem 0 0.7rem 0" }}>How it Works</h2>
                     <hr style={{ border: "none", borderTop: "1px solid black", margin: "0.4rem 0", }}/>
-                    <img src='/ingredients/retinol.png'></img>
+                    <img src='/ingredients/niacinamide.png'></img>
                     <hr style={{ border: "none", borderTop: "1px solid black", margin: "0.4rem 0", }}/>
                 </section>
 
@@ -147,7 +154,7 @@ export default function Home() {
                     <h2>Recommended Ingredients</h2>
                     <br></br>
 
-                    {["Niacinamide"].map((key) => {
+                    {["Ceramides"].map((key) => {
             const item = ingredients.find((i) => i.name.startsWith(key));
             return (
                 <Ingredients

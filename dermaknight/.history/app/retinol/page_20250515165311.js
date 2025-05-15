@@ -5,7 +5,7 @@ import {useRouter} from 'next/navigation';
 
 // import styles from "./page.module.css";
 import Ingredients from "@/app/ui/ingredientCard/ingredientCard";
-import ToggleDropdown from "@/app/ui/toggleDropdown/toggleDropdown";
+import ToggleDropdown from "@app/ui/toggleDropdown/toggleDropdown";
 
 const ingredients = [
     {

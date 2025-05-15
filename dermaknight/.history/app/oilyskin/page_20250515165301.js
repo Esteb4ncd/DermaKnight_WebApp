@@ -1,6 +1,6 @@
 'use client'
 // import Image from "next/image";
-import styles from "@/app/page.module.css";
+import styles from "@app/page.module.css";
 import Ingredients from "@/app/ui/ingredientCard/ingredientCard";
 import {useRouter} from 'next/navigation';
 
@@ -36,12 +36,6 @@ const ingredients = [
       image: "/ingredients/image_2.png",
       description: "Helps brighten skin and fade dark marks gently.",
   }, 
-  {
-    key: 5,
-      name: "Azelaic Acid:",
-      image: "/ingredients/image_1.png",
-      description: "Calms irritation and fades post-acne spots.",
-  }, 
 ];
 
 
@@ -52,14 +46,14 @@ export default function Home() {
   return (
     <div className={styles.authContainer}>
       <header>
-        <h1>Dark Spots</h1>
+        <h1>Oily Skin</h1>
       </header>
 
       <main>
         <section>
         <h2 style={{ "text-align": "left" }}>Overview</h2>
         <hr style={{ border: "none", borderTop: "1px solid black", margin: "0.4rem 0" }} />
-        <p style={{ "text-align": "left" }}>Dark spots are flat marks on the skin that show up when your skin makes too much pigment. This can happen after sun damage, acne, or cuts. They're also called hyperpigmentation.</p>
+        <p style={{ "text-align": "left" }}>Oily skin happens when your skin produces too much sebum (natural oil). This can make your skin look shiny, feel greasy, and lead to clogged pores or breakouts. It’s common, especially in teens and young adults.</p>
         </section>
 
         <section>
@@ -67,16 +61,16 @@ export default function Home() {
         <hr style={{ border: "none", borderTop: "1px solid black", margin: "0.4rem 0" }} />
         <ul style={{ "text-align": "left"}}>
           <li>
-            Too much sun exposure (without sunscreen)
+            Genetics (some people naturally produce more oil)
           </li>
           <li>
-            Acne healing or picking at pimples
+            Hormonal changes (like puberty or stress)
           </li>
           <li>
-            Shaving cuts or skin irritation
+            Using harsh cleansers that strip the skin
           </li>
           <li>
-            Hormones or aging
+          Skipping moisturizer (yes, really! Your skin overcompensates!)
           </li>
         </ul>
         </section>
@@ -87,7 +81,7 @@ export default function Home() {
         <h2 style={{ "text-align": "left" }}>Recommended Ingredients</h2>
         <hr style={{ border: "none", borderTop: "1px solid black", margin: "0.4rem 0" }} />
 
-        {["Niacinamide", "Vitamin C", "Azelaic Acid"].map((key) => {
+        {["Salicylic Acid", "Niacinamide"].map((key) => {
           const item = ingredients.find((i) => i.name.startsWith(key));
             return (
               <Ingredients

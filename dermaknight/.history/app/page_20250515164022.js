@@ -4,8 +4,8 @@ import {useRouter} from 'next/navigation';
 
 
 // import styles from "./page.module.css";
-import Ingredients from '@/app/ui/ingredientCard/ingredientCard.js';
-import ToggleDropdown from '@/app/ui/toggleDropdown/toggleDropdown.js';
+import Ingredients from '@app/ui/ingredientCard/ingredientCard.js';
+import ToggleDropdown from '@app/ui/toggleDropdown/toggleDropdown.js';
 
 const ingredients = [
     {
@@ -54,7 +54,7 @@ export default function Home() {
         // Add the Header here
         <div className="authContainer">
             <header>
-                <h1>Ceramides</h1>
+                <h1>Niacinamide</h1>
             </header>
 
             <main>
@@ -79,12 +79,11 @@ export default function Home() {
                         What it is:
                     </p>
                     <ul style={{ "text-align": "left" }}>
+                        <li>A form of Vitamin B3 used in skincare.</li>
                         <li>
-                            Natural fats found in your skin that help hold it together, keep moisture in.
-                            </li>
-                        <li>
-                            They make up about half of the outermost layer of your skin.
+                            Water-soluble and works wwell for most skin types.
                         </li>
+                        <li>Known for being gentle yet effective.</li>
                     </ul>
                     <br></br>
                     <p style={{ "text-align": "left", "font-weight": "bold" }}>
@@ -92,13 +91,18 @@ export default function Home() {
                     </p>
                     <ul style={{ "text-align": "left" }}>
                         <li>
-                            Strengthen the skin barrier, protecting against environmental damage.
+                            Strengthens the skin barrier to retain moisture.
                         </li>
+                        <li>Helps reduce redness and inflammation.</li>
                         <li>
-                            Useful for conditions like eczema, dry skin, and aging skin.
+                            Regulates oil production, making it great for oily
+                            or acne-prone skin.
                         </li>
+                        <li>Minimizes the appearance of pores over time.</li>
+                        <li>Fades dark spots and improves uneven skin tone.</li>
                         <li>
-                            Supports healthy, plump, and smooth-looking skin.
+                            Provides antioxidant protection against
+                            environmental stress.
                         </li>
                     </ul>
                 </section>
@@ -108,32 +112,6 @@ export default function Home() {
                     <ToggleDropdown />
                 </section>
 
-            {/* How It Works Section */}
-                <section className="padding-sm">
-                    <hr style={{ border: "none", borderTop: "1px solid black", margin: "0.4rem 0", }}/>
-                    <h2 style={{ "text-align": "left", margin: "0.7rem 0 0.7rem 0" }}>How it Works</h2>
-                    <hr style={{ border: "none", borderTop: "1px solid black", margin: "0.4rem 0", }}/>
-                    <img src='/ingredients/ceramides.png'></img>
-                    <hr style={{ border: "none", borderTop: "1px solid black", margin: "0.4rem 0", }}/>
-                </section>
-
-            {/* Recommended Section */}
-                <section className="authContainer padding-md">
-                    <h2>Recommended Ingredients</h2>
-                    <br></br>
-
-                    {["Retinol", "Niacinamide", "Vitamin C"].map((key) => {
-                        const item = ingredients.find((i) => i.name.startsWith(key));
-                        return (
-                            <Ingredients
-                            key={key}
-                            image={item.image}
-                            name={item.name}
-                            description={item.description}
-                            onClick={() => router.push(`/${key.toLowerCase().replace(/\s/g, '')}`)}
-                            />
-                            );
-                        })}
                 </section>
             </main>
         </div>

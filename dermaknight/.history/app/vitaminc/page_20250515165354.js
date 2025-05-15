@@ -4,8 +4,8 @@ import {useRouter} from 'next/navigation';
 
 
 // import styles from "./page.module.css";
-import Ingredients from "@/app/ui/ingredientCard/ingredientCard";
-import ToggleDropdown from "@/app/ui/toggleDropdown/toggleDropdown";
+import Ingredients from '@/app/ui/ingredientCard/ingredientCard.js';
+import ToggleDropdown from '@app/ui/toggleDropdown/toggleDropdown.js';
 
 const ingredients = [
     {
@@ -54,14 +54,14 @@ export default function Home() {
         // Add the Header here
         <div className="authContainer">
             <header>
-                <h1>Retinol</h1>
+                <h1>Niacinamide</h1>
             </header>
 
             <main>
                 {/* Chips Section */}
                 <div className="chip-container">
                     <span className="chip chip-blue">Hydration</span>
-                    {/* <span className="chip chip-yellow">Eczema</span> */}
+                    <span className="chip chip-yellow">Eczema</span>
                     <span className="chip chip-green">Skin Barrier</span>
                 </div>
                 
@@ -80,7 +80,10 @@ export default function Home() {
                     </p>
                     <ul style={{ "text-align": "left" }}>
                         <li>
-                            A vitamin A derivative that speeds up skin cell turnover and stimulates the production of new skin cells.   
+                            A versatile vitamin with essential roles in immune health, skin repair, antioxidant defense, and iron metabolism
+                        </li>
+                        <li>
+                            It's a cornerstone in brightening and anti-aging skincare.
                         </li>
                     </ul>
                     <br></br>
@@ -89,13 +92,13 @@ export default function Home() {
                     </p>
                     <ul style={{ "text-align": "left" }}>
                         <li>
-                            Speeds up the skin's natural exfoliation process by increasing the rate at which skin cells shed and regenerate.
+                            Brightens skin tone
                         </li>
                         <li>
-                            Increases collagen production
+                            Boosts collagen production
                         </li>
                         <li>
-                            It helps your skin absorb other product better
+                            Fades hyper pigmentation
                         </li>
                     </ul>
                 </section>
@@ -110,7 +113,7 @@ export default function Home() {
                     <hr style={{ border: "none", borderTop: "1px solid black", margin: "0.4rem 0", }}/>
                     <h2 style={{ "text-align": "left", margin: "0.7rem 0 0.7rem 0" }}>How it Works</h2>
                     <hr style={{ border: "none", borderTop: "1px solid black", margin: "0.4rem 0", }}/>
-                    <img src='/ingredients/retinol.png'></img>
+                    <img src='/ingredients/vitamin_c.png'></img>
                     <hr style={{ border: "none", borderTop: "1px solid black", margin: "0.4rem 0", }}/>
                 </section>
 
@@ -119,7 +122,7 @@ export default function Home() {
                     <h2 style={{ "text-align": "left" }}>Do Not Combine With</h2>
                     <br></br>
 
-                    {["Vitamin C"].map((key) => {
+                    {["Retinol", "Niacinamide"].map((key) => {
                         const item = ingredients.find((i) =>
                             i.name.startsWith(key)
                         );
@@ -147,7 +150,7 @@ export default function Home() {
                     <h2>Recommended Ingredients</h2>
                     <br></br>
 
-                    {["Niacinamide"].map((key) => {
+                    {["Ceramides"].map((key) => {
             const item = ingredients.find((i) => i.name.startsWith(key));
             return (
                 <Ingredients
