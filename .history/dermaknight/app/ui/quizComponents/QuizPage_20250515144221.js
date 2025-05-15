@@ -38,8 +38,8 @@ export default function QuizPage() {
   const currentQuestionData = quizQuestions[currentQuestion];
   const isSkinToneQuestion = currentQuestionData.id === 2;
 
-  const router = useRouter();
   return (
+    const router
 
     <div className='auth-container'>
       <div className={styles.progressBarandExitContainer}>
@@ -47,7 +47,7 @@ export default function QuizPage() {
           currentQuestion={currentQuestion} 
           totalQuestions={quizQuestions.length} 
         />
-        <button className={styles.exitButton} onClick={() => router.push('/homePage')}>
+        <button className={styles.exitButton} onClick={onClick}>
           <img src="/quizGraphics/exitFromQuiz.svg" alt="Exit Quiz" />
         </button>
       </div>
