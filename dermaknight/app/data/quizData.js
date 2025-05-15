@@ -1,7 +1,7 @@
 export const quizQuestions = [
   {
     id: 1,
-    question: "Your age range (Select 1)",
+    question: "Your age range",
     options: [
       { id: 'a', text: "13-18" },
       { id: 'b', text: "19-24" },
@@ -25,10 +25,42 @@ export const quizQuestions = [
     id: 3,
     question: "What is your skin type?",
     options: [
-      { id: 'a', text: "Combination: Oily in the T-Zone (forehead, nose) and normal or dry everywhere else" },
-      { id: 'b', text: "Dry: Skin feels tight and dry all-year round and flaking or itching is common" },
-      { id: 'c', text: "Normal: Mild oiliness, dryness or breakouts can appear occasionally" },
-      { id: 'd', text: "Oily: Excess oil all over the face, often causing blocked pores" }
+      {
+        id: 'a',
+        text: (
+          <>
+            <span className="bodyMedium">Combination Oily</span><br />
+            <span className="labelSmall">In the T-Zone (forehead, nose) and <br /> normal or dry everywhere else</span>
+          </>
+        )
+      },
+      {
+        id: 'b',
+        text: (
+          <>
+            <span className="bodyMedium">Dry</span><br />
+            <span className="labelSmall">Skin feels tight and dry all-year round <br />and flaking or itching is common</span>
+          </>
+        )
+      },
+      {
+        id: 'c',
+        text: (
+          <>
+            <span className="bodyMedium">Normal</span><br />
+            <span className="labelSmall">Mild oiliness, dryness or breakouts can<br /> appear occasionally</span>
+          </>
+        )
+      },
+      {
+        id: 'd',
+        text: (
+          <>
+            <span className="bodyMedium">Oily</span><br />
+            <span className="labelSmall">Excess oil all over the face, often<br /> causing blocked pores</span>
+          </>
+        )
+      }
     ],
     correctAnswer: null
   },
@@ -55,7 +87,7 @@ export const quizQuestions = [
   },
   {
     id: 6,
-    question: "Which of the following do you think has the most impact on your skin’s health?",
+    question: "Which of the following do you think has the most impact on your skin's health?",
     options: [
       { id: 'a', text: "Hormones" },
       { id: 'b', text: "Stress" },

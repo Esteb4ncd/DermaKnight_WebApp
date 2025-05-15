@@ -1,0 +1,9 @@
+.toggle-button {
+    background-color: lightblue;
+  }
+  
+  .toggle-button.active {
+    background-color: lightgreen;
+    color: blue;
+  }
+  

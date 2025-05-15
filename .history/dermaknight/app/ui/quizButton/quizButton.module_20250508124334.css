@@ -1,0 +1,14 @@
+
+
+.toggleButton {
+    background-color: var(  --color-quiz-button);  /* Green color */
+    color: var(  --color-text);
+    border-radius: 3px;
+    border-bottom: 2px solid var(--Tertiary-tertiary-700, #949DB5);
+background: var(--Tertiary-tertiary-200, #EAEFFF);
+}
+  
+.toggleButton.active {
+    background-color: var(  --color-quiz-button-selected);  /* Red color */
+    color: white;
+}

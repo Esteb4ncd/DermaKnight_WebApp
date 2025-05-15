@@ -1,7 +1,9 @@
 'use client';
 
+import styles from './QuizPage.module.css'; 
 import { useState } from 'react';
 import QuizButton from './QuizButton';
+import ProgressBar from './ProgressBar';
 import { quizQuestions } from '@/app/data/quizData';
 
 export default function QuizPage() {
@@ -32,25 +34,49 @@ export default function QuizPage() {
   };
 
   const currentQuestionData = quizQuestions[currentQuestion];
+  const isSkinToneQuestion = currentQuestionData.id === 2;
 
   return (
     <div className='auth-container'>
-      <h1>Question {currentQuestion + 1}</h1>
-      <h2>{currentQuestionData.question}</h2>
-      {currentQuestionData.options.map((option) => (
-        <QuizButton 
-          key={option.id}
-          text={option.text} 
-          isActive={activeButton === option.id} 
-          onClick={() => handleButtonClick(option.id)} 
+      <div className={styles.progressBarandExitContainer}>
+        <ProgressBar 
+          currentQuestion={currentQuestion} 
+          totalQuestions={quizQuestions.length} 
         />
-      ))}
-      <div>
-        <button onClick={handlePreviousQuestion} disabled={currentQuestion === 0}>
-          Previous
+        <button className={styles.exitButton}>
+          <img src="/quizGraphics/exitFromQuiz.svg" alt="Exit Quiz" />
         </button>
-        <button onClick={handleNextQuestion} disabled={currentQuestion === quizQuestions.length - 1}>
-          Next
+      </div>
+
+      <div className={styles.quizContent}>
+        <p className={`h2 ${styles.quizTitle}`}>Skin Quiz</p>
+        <p className={`h4 ${styles.quizQuestion}`}>{currentQuestionData.question}</p>
+        <p className={`label ${styles.quizSelectOne}`}>Select One</p>
+        {currentQuestionData.options.map((option) => (
+          <QuizButton 
+            key={option.id}
+            text={option.text} 
+            isActive={activeButton === option.id} 
+            onClick={() => handleButtonClick(option.id)}
+            isColorSwatch={isSkinToneQuestion}
+          />
+        ))}
+      </div>
+
+      <div className={styles.buttonsContainer}>
+        <button 
+          onClick={handlePreviousQuestion} 
+          disabled={currentQuestion === 0} 
+          className={styles.previousButton}
+        >
+          <img src="/quizGraphics/previousButtonQuiz.svg" alt="Previous" />
+        </button>
+        <button 
+          onClick={handleNextQuestion} 
+          disabled={!activeButton} 
+          className={styles.nextButton}
+        >
+          {currentQuestion === quizQuestions.length - 1 ? 'Submit' : 'Next'}
         </button>
       </div>
     </div>
