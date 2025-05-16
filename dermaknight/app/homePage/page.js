@@ -12,15 +12,16 @@ return (
     <div className={styles.container}>
             <header className={styles.header}>
                 <div className={styles.nav}>
-                    <h1 className={styles.logo}> HEADER</h1>
+                    <h1 className={styles.logo}> EMMA HELP ME</h1>
                     <div className={styles.icons}>🔍 ❤️ 👤</div>
                 </div>
             </header>
             
         <div className={styles.quizBanner}>
-            <Image src="/quiz-avatar.png" alt="Quiz Person" width={120} height={120} />
+            <Image src="/images/quizCharacter.png" alt="Quiz Person" width={133} height={233} />
+            <div className={styles.teethPatch}></div>
             <div className={styles.quizText}>
-                <p>Skin feeling different lately?<br />Take the quiz again to update your results</p>
+                <p className= {styles.purpleText}>Skin feeling different lately?<br />Take the quiz again to update your results</p>
                 <button className={styles.quizButton}>Retake Quiz</button>
             </div>
         </div>
@@ -28,7 +29,7 @@ return (
         {/* Quiz Findings */}
         <section className={styles.section}>
             <div className={styles.sectionHeader}>
-                <h2>Quiz Findings</h2>
+                <h2 className={styles.heading2}>Quiz Findings</h2>
             </div>
             <div className={styles.findingsGrid}>
                 {['Dark Spots', 'Uneven Skin Tone',].map((label, i) => (
@@ -42,19 +43,19 @@ return (
 
         {/* Saved Categories */}
         <section className={styles.section}>
-            <h2>Saved Categories</h2>
+            <h2 className={styles.heading2}>Saved Categories</h2>
             <p className={styles.emptyText}>Nothing saved</p>
         </section>
 
         {/* Saved Ingredients */}
         <section className={styles.section}>
-            <h2>Saved Ingredients</h2>
+            <h2 className={styles.heading2}>Saved Ingredients</h2>
             <p className={styles.emptyText}>Nothing saved</p>
         </section>
 
         {/* Popular Articles */}
         <section className={styles.section}>
-            <h2>Popular Articles</h2>
+            <h2 className={styles.heading2}>Popular Articles</h2>
             <div className={styles.articleCard}>
                 <Image src="/article-1.jpg" alt="Acne blog" width={400} height={200} />
                 <p><strong>Harvard health Blog</strong><br />Acne: What you need to know</p>
