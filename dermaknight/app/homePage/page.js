@@ -9,6 +9,14 @@ import Image from 'next/image';
 
 export default function HomePage() {
     const router = useRouter();
+    const handleClick = (label) => {
+        if (label === 'Dark Spots') {
+            router.push('/darkspots');
+        } else if (label === 'Uneven Skin Tone') {
+          router.push('/unevenskin'); // adjust if needed
+        }
+    };
+
 return (
     <div className={styles.centeredNoPad}>
     <div className={styles.container}>
@@ -39,7 +47,7 @@ return (
                     { label: 'Dark Spots', image: 'darkspots.png' },
                     { label: 'Uneven Skin Tone', image: 'uneven.png' },
                 ].map((item, i) => (
-                    <div className={styles.findingCard} key={i} onClick={() => handleClick(item.label)}> 
+                    <div className={styles.findingCard} key={i} onClick={() => handleClick(item.label)}>
                     <Image src={`/images/${item.image}`} alt={item.label} width={74} height={74} />
                     <p>{item.label}</p>
                     </div>
