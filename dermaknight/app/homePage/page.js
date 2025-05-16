@@ -59,15 +59,40 @@ return (
 
         {/* Popular Articles */}
         <section className={styles.section}>
-            <h2 className={styles.heading2}>Popular Articles</h2>
-            <div className={styles.articleCard}>
-                <Image src="/article-1.jpg" alt="Acne blog" width={400} height={200} />
-                <p><strong>Harvard health Blog</strong><br />Acne: What you need to know</p>
+        <h2 className={styles.heading2}>Popular Articles</h2>
+
+            <div className={styles.articleGrid}>
+            {[
+                {
+                    label: 'Harvard health Blog',
+                    title: 'Acne: What you need to know',
+                    image: '/images/article1.jpg',
+                    link: 'https://www.health.harvard.edu/blog/acne-what-you-need-to-know-2019010315717',
+                },
+                {
+                    label: 'AAD',
+                    title: 'Skin Care Tips For Men',
+                    image: '/images/article2.jpg',
+                    link: 'https://www.aad.org/public/everyday-care/skin-care-basics/care/skin-care-for-men',
+                },
+                ].map((article, i) => (
+                <a
+                    href={article.link}
+                    key={i}
+                    className={styles.articleCard}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <div className={styles.imageOverlay}>
+                    <img src={article.image} alt={article.title} />
+                    <div className={styles.textOverlay}>
+                        <p className={styles.label}>{article.label}</p>
+                        <p className={styles.title}>{article.title}</p>
+                    </div>
+                    </div>
+                </a>
+                ))}
             </div>
-            <div className={styles.articleCard}>
-                <Image src="/article-2.jpg" alt="Men skincare" width={400} height={200} />
-                <p><strong>AAD</strong><br />Skin Care Tips For Men</p>
-        </div>
         </section>
     </div>
     );
