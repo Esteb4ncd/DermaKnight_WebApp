@@ -7,9 +7,9 @@ import {useRouter} from 'next/navigation';
 import Sidebar from "@/app/ui/Sidebar/Sidebar.js";
 import Header from "@/app/ui/header/header.js";
 
-// KEEP THIS LINE FOR THE HEADER TO WORK
+// KEEP THESE LINES FOR THE HEADER TO WORK
 import "@fortawesome/fontawesome-free/css/all.min.css"; 
-// ^^^^ KEEP THIS LINE FOR THE HEADER TO WORK ^^^^
+// ^^^^ KEEP THESE LINES FOR THE HEADER TO WORK ^^^^
 
 
 export default function Page() {

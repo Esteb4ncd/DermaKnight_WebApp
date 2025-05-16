@@ -23,7 +23,7 @@ export default function Header() {
                 </div>
 
                 <div className="header-right">
-                    <a href="searchPage"><i className="fas fa-search"></i></a>
+                    {/* <a href="searchPage"><i className="fas fa-search"></i></a> */}
                 </div>
         </header>
 

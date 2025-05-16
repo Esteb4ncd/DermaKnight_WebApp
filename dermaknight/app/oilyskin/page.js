@@ -4,6 +4,13 @@ import styles from "@/app/page.module.css";
 import Ingredients from "@/app/ui/ingredientCard/ingredientCard";
 import {useRouter} from 'next/navigation';
 
+// KEEP THESE LINES FOR THE HEADER TO WORK
+// import the header component
+import Sidebar from "@/app/ui/Sidebar/Sidebar.js";
+import Header from "@/app/ui/header/header.js";
+import "@fortawesome/fontawesome-free/css/all.min.css"; 
+// ^^^^ KEEP THESE LINES FOR THE HEADER TO WORK ^^^^
+
 
 const ingredients = [
   {
@@ -44,20 +51,22 @@ export default function Home() {
 
 
   return (
-    <div className={styles.authContainer}>
-      <header>
-        <h1>Oily Skin</h1>
-      </header>
+            <div>
+                <header>
+                    <Header />
+                </header>
+            <div className="authContainer">
 
+        <h2>Oily Skin</h2>
       <main>
         <section>
-        <h2 style={{ "text-align": "left" }}>Overview</h2>
+        <h3 style={{ "text-align": "left" }}>Overview</h3>
         <hr style={{ border: "none", borderTop: "1px solid black", margin: "0.4rem 0" }} />
         <p style={{ "text-align": "left" }}>Oily skin happens when your skin produces too much sebum (natural oil). This can make your skin look shiny, feel greasy, and lead to clogged pores or breakouts. It’s common, especially in teens and young adults.</p>
         </section>
 
         <section>
-        <h2 style={{ "text-align": "left" }}>Causes</h2>
+        <h3 style={{ "text-align": "left" }}>Causes</h3>
         <hr style={{ border: "none", borderTop: "1px solid black", margin: "0.4rem 0" }} />
         <ul style={{ "text-align": "left"}}>
           <li>
@@ -78,7 +87,7 @@ export default function Home() {
 
 
         <section className={styles.authContainer}>
-        <h2 style={{ "text-align": "left" }}>Recommended Ingredients</h2>
+        <h3 style={{ "text-align": "left" }}>Recommended Ingredients</h3>
         <hr style={{ border: "none", borderTop: "1px solid black", margin: "0.4rem 0" }} />
 
         {["Salicylic Acid", "Niacinamide"].map((key) => {
@@ -96,6 +105,7 @@ export default function Home() {
 
         </section>
       </main>
+    </div>
     </div>
   )
 }

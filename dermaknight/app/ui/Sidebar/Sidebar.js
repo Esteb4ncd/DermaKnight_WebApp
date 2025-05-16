@@ -31,6 +31,7 @@ export default function Sidebar() {
               <a href="homePage">Saved</a>
               <a href="profile">Profile</a>
               <a href="aboutUs">About Us</a>
+              <a href="settings">Settings</a>
 
             </nav>
 

@@ -2,10 +2,17 @@
 import React, { useState } from "react";
 import {useRouter} from 'next/navigation';
 
-
 // import styles from "./page.module.css";
 import Ingredients from '@/app/ui/ingredientCard/ingredientCard.js';
 import ToggleDropdown from '@/app/ui/toggleDropdown/toggleDropdown.js';
+
+
+// KEEP THESE LINES FOR THE HEADER TO WORK
+// import the header component
+import Sidebar from "@/app/ui/Sidebar/Sidebar.js";
+import Header from "@/app/ui/header/header.js";
+import "@fortawesome/fontawesome-free/css/all.min.css"; 
+// ^^^^ KEEP THESE LINES FOR THE HEADER TO WORK ^^^^
 
 const ingredients = [
     {
@@ -52,12 +59,14 @@ export default function Home() {
 
     return (
         // Add the Header here
-        <div className="authContainer">
+        <div>
             <header>
-                <h1>Ceramides</h1>
+                <Header />
             </header>
+        <div className="authContainer">
 
             <main>
+                <h2>Ceramides</h2>
                 {/* Chips Section */}
                 <div className="chip-container">
                     <span className="chip chip-blue">Hydration</span>
@@ -67,7 +76,7 @@ export default function Home() {
                 
                 {/* Overview Section */}
                 <section className="padding-md">
-                    <h2 style={{ "text-align": "left" }}>Overview</h2>
+                    <h3 style={{ "text-align": "left" }}>Overview</h3>
                     <hr
                         style={{
                             border: "none",
@@ -111,7 +120,7 @@ export default function Home() {
             {/* How It Works Section */}
                 <section className="padding-sm">
                     <hr style={{ border: "none", borderTop: "1px solid black", margin: "0.4rem 0", }}/>
-                    <h2 style={{ "text-align": "left", margin: "0.7rem 0 0.7rem 0" }}>How it Works</h2>
+                    <h3 style={{ "text-align": "left", margin: "0.7rem 0 0.7rem 0" }}>How it Works</h3>
                     <hr style={{ border: "none", borderTop: "1px solid black", margin: "0.4rem 0", }}/>
                     <img src='/ingredients/ceramides.png'></img>
                     <hr style={{ border: "none", borderTop: "1px solid black", margin: "0.4rem 0", }}/>
@@ -119,7 +128,7 @@ export default function Home() {
 
             {/* Recommended Section */}
                 <section className="authContainer padding-md">
-                    <h2>Recommended Ingredients</h2>
+                    <h3>Recommended Ingredients</h3>
                     <br></br>
 
                     {["Retinol", "Niacinamide", "Vitamin C"].map((key) => {
@@ -137,5 +146,6 @@ export default function Home() {
                 </section>
             </main>
         </div>
+    </div>
     );
 }

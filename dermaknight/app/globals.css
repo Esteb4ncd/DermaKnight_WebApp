@@ -1,6 +1,15 @@
 .auth-container {
   font-family: var(--font-main);
-  padding: 32px;
+  padding: 5px 32px 32px 32px;
+  max-width: 393px;
+  margin: 0 auto;
+  text-align: center;
+  background: white;
+}
+
+.authContainer {
+  font-family: var(--font-main);
+  padding: 5px 32px 32px 32px;
   max-width: 393px;
   margin: 0 auto;
   text-align: center;
@@ -16,8 +25,13 @@
     font-family: 'Poppins', sans-serif;
     min-height: 60px;
     flex-wrap: nowrap;
+  /* position: sticky;
+  top: 0;
+  z-index: 1000;
+  margin: 0;
+  padding: 1rem;
+  width: 100%; */
 }
-
 
 .header-left,
 .header-right {
@@ -130,7 +144,6 @@
   font-weight: bold;
   font-size: 1.3rem;
   margin-bottom: 2rem;
-  /* position: relative; */
 }
 
 .nav-links {
@@ -240,9 +253,9 @@ header {
 }
 
 .chip {
-  padding: 0.4rem 1rem;
+  padding: 0.4rem 0.8rem;
   border-radius: 999px;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 500;
   color: #000;
   display: inline-block;
