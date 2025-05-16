@@ -1,1 +1,0 @@
-import './page.module.css'

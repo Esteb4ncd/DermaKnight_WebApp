@@ -1,3 +1,0 @@
-
-
-<h1>Niacinamide</h1>
