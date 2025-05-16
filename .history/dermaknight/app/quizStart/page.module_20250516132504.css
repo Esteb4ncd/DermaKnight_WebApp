@@ -1,0 +1,15 @@
+
+.startQuiz{
+    position: absolute;
+    top:708;
+    left: o;
+    font-family: var(--font-main);
+    margin-left: 10px;
+    height: 49px;
+    width: 328px;
+    border: 0;
+    border-radius: 3px;
+    font-size: 20px;
+    background-color: var( --color-button-bg);
+    color: var(  --color-button-text)
+}

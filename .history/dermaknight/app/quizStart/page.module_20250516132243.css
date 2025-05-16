@@ -1,0 +1,11 @@
+
+.startQuiz{
+    margin-left: 10px;
+    height: 49px;
+    width: 234px;
+    border: 0;
+    border-radius: 3px;
+    font-size: 20px;
+    background-color: var( --color-button-bg);
+    Color: var(  --color-button-text)
+}

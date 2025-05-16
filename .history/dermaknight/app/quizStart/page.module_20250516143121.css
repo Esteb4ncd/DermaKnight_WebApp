@@ -1,0 +1,32 @@
+
+.startQuiz{
+    font-family: var(--font-main);
+    margin-left: 10px;
+    height: 49px;
+    width: 328px;
+    border: 0;
+    border-radius: 3px;
+    font-size: 20px;
+    background-color: var( --color-button-bg);
+    color: var(  --color-button-text)
+}
+
+
+.logo{
+    margin-top:200px;
+}
+
+.textLineOne{
+    padding:12px 0 10px;
+
+ 
+}
+.textLineTwo{
+    padding:0px 20px;
+    margin-bottom: 205px;
+}
+
+.exitButton {
+    flex: flex;
+    align-items: ;
+}
