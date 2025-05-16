@@ -1,3 +1,12 @@
+.centeredNoPad {
+    font-family: var(--font-main);
+    padding: 0;
+    max-width: 393px;
+    margin: 0 auto; /* centers it horizontally */
+    text-align: center;
+    background: white;
+}
+
 .container {
     font-family: 'Lexend', sans-serif;
     background: #f9f9ff;
@@ -162,17 +171,28 @@
     cursor: pointer;
 }
 
+.articleGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-top: 0;
+}
+
 .articleCard {
     background: #fff;
     border-radius: 12px;
     overflow: hidden;
-    margin-top: 1rem;
+    margin-bottom: 15px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
-.articleCard p {
-    padding: 0.75rem;
-    font-size: 0.95rem;
+.articleCard {
+    display: block;
+    border-radius: 16px;
+    overflow: hidden;
+    text-decoration: none;
 }
 
 .imageWrapper {
@@ -180,14 +200,37 @@
     width: 120px;
     height: 120px;
 }
+.imageOverlay {
+    position: relative;
+    padding-top: 0;
+}
 
-.teethPatch {
+.imageOverlay img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 16px;
+}
+
+.textOverlay {
     position: absolute;
-    bottom: 28px; /* Adjust until it aligns with the mouth */
-    left: 45px;   /* Adjust this too */
-    width: 20px;
-    height: 8px;
-    background: red;
-    border-radius: 50%;
-    z-index: 2;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    color: white;
+    text-align: left;;
+}
+
+.label {
+    font-size: 16px;  
+    font-weight: 500;
+    margin: 0;
+}
+
+.title {
+    font-size: 16px; 
+    font-weight: 400;
+    margin: 2px 0 0 0;
 }
