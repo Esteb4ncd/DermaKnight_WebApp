@@ -1,0 +1,236 @@
+.centeredNoPad {
+    font-family: var(--font-main);
+    padding: 0;
+    max-width: 393px;
+    margin: 0 auto; /* centers it horizontally */
+    text-align: center;
+    background: white;
+}
+
+.container {
+    font-family: 'Lexend', sans-serif;
+    background: #f9f9ff;
+    color: #1e1e1e;
+    max-width: 393px;
+
+}
+
+.header {
+    height: 111px;
+    background: #E0E8FF;
+}
+
+.heading2 {
+    font-family: var(--font-main);
+    font-size: var(--text-h4);
+    line-height: var(--line-h4);
+    font-weight: 400;
+    text-align: left;
+    font-weight: 700;
+    padding: 1rem;
+
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0.5rem;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.icons {
+    font-size: 1.2rem;
+}
+
+.quizBanner {
+    display: flex;
+    padding: 2rem 0.9rem;
+    width: 393px;
+    height: 233px;
+    flex-shrink: 0;
+    align-items: center;
+    background-color: #72798B;
+    gap: 0.5rem;
+}
+
+.purpleText {
+    color: #352043;
+    font-weight: 600;
+}
+
+.whiteText {
+    color: #ffffff;
+    font-weight: 600;
+}
+.quizText {
+    flex: 1;
+    text-align: center;
+    
+}
+
+.quizText p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.quizButton {
+    margin-top: 2rem;
+    background-color: #4caf50;
+    color: white;
+    width: 158px;
+    height: 48.115px;
+    flex-shrink: 0;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: 700;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.section {
+    margin-top: 0px;
+}
+
+.sectionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.seeAll {
+    font-size: 0.85rem;
+    color: #0070f3;
+    cursor: pointer;
+}
+
+.findingsGrid {
+    display: flex;
+    gap: 1rem;
+    margin-left: 25px;
+    overflow: hidden;
+}
+
+.findingCard {
+    background: #FDF0DE;
+    border-radius: 12px;
+    padding-top: 2px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    border: 1px solid #D6D6D6;
+    font-size: 12px;
+    width: 124px;
+    height: 98px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.findingCard p {
+    margin-top: 0;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; 
+    letter-spacing: 0.05px;
+}
+
+
+
+.emptyText {
+    color: #5A5757;
+    margin-top: 0.5rem;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.snackbar {
+    background-color: #d8f2d2;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    margin-top: 1.5rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    font-size: 0.85rem;
+    position: relative;
+}
+
+.snackButton {
+    margin-left: auto;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    color: #2a7f2e;
+    cursor: pointer;
+}
+
+.articleGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-top: 0;
+}
+
+.articleCard {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.articleCard {
+    display: block;
+    border-radius: 16px;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.imageWrapper {
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+.imageOverlay {
+    position: relative;
+    padding-top: 0;
+}
+
+.imageOverlay img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 16px;
+}
+
+.textOverlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    color: white;
+    text-align: left;;
+}
+
+.label {
+    font-size: 16px;  
+    font-weight: 500;
+    margin: 0;
+}
+
+.title {
+    font-size: 16px; 
+    font-weight: 400;
+    margin: 2px 0 0 0;
+}

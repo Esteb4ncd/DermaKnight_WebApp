@@ -1,0 +1,29 @@
+.dropdown-container {
+  margin-top: 1rem;
+}
+
+.toggle-button {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border: none;
+    background: none;
+    font-size: 16px;
+    padding: 10px 0;
+    cursor: pointer;
+    color: #333;
+}
+
+.dropdown-content {
+    padding: 10px;
+    border-top: 1px solid #000;
+    font-size: 14px;
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+}
+
+.rotated {
+    transform: rotate(180deg);
+}

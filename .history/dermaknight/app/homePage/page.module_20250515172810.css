@@ -1,0 +1,163 @@
+.container {
+    font-family: 'Lexend', sans-serif;
+    background: #f9f9ff;
+    color: #1e1e1e;
+    max-width: 393px;
+
+}
+
+.header {
+    height: 111px;
+    background: #E0E8FF;
+}
+
+.heading2 {
+    font-family: var(--font-main);
+    font-size: var(--text-h4);
+    line-height: var(--line-h4);
+    font-weight: 400;
+    text-align: left;
+    font-weight: 700;
+    padding: 1rem;
+
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0.5rem;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.icons {
+    font-size: 1.2rem;
+}
+
+.quizBanner {
+    display: flex;
+    padding: 2rem 0.9rem;
+    width: 393px;
+    height: 233px;
+    flex-shrink: 0;
+    align-items: center;
+    background-color: #72798B;
+    gap: 1rem;
+}
+
+.quizText {
+    flex: 1;
+    text-align: center;
+    
+}
+
+.quizText p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.quizButton {
+    margin-top: 1.8rem;
+    background-color: #5B9253;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+.section {
+    margin-top: 2rem;
+}
+
+.sectionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.seeAll {
+    font-size: 0.85rem;
+    color: #0070f3;
+    cursor: pointer;
+}
+
+.findingsGrid {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 1rem;
+    overflow-x: auto;
+}
+
+.findingCard {
+    background: #fff5e0;
+    border-radius: 10px;
+    padding: 0.75rem;
+    min-width: 100px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.emptyText {
+    color: #999;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.snackbar {
+    background-color: #d8f2d2;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    margin-top: 1.5rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    font-size: 0.85rem;
+    position: relative;
+}
+
+.snackButton {
+    margin-left: auto;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    color: #2a7f2e;
+    cursor: pointer;
+}
+
+.articleCard {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-top: 1rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.articleCard p {
+    padding: 0.75rem;
+    font-size: 0.95rem;
+}
+
+.imageWrapper {
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+
+.teethPatch {
+    position: absolute;
+    bottom: 28px; /* Adjust until it aligns with the mouth */
+    left: 45px;   /* Adjust this too */
+    width: 20px;
+    height: 8px;
+    background: red;
+    border-radius: 50%;
+    z-index: 2;
+}
