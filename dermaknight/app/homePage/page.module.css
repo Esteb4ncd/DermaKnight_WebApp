@@ -1,5 +1,4 @@
 .container {
-    padding: 1rem;
     font-family: 'Lexend', sans-serif;
     background: #f9f9ff;
     color: #1e1e1e;
@@ -19,6 +18,7 @@
     font-weight: 400;
     text-align: left;
     font-weight: 700;
+    padding: 1rem;
 
 }
 
@@ -40,34 +40,40 @@
 
 .quizBanner {
     display: flex;
+    padding: 2rem 0.9rem;
+    width: 393px;
+    height: 233px;
+    flex-shrink: 0;
     align-items: center;
-    background-color: #e8f0ff;
-    border-radius: 8px;
-    padding: 1rem;
+    background-color: #72798B;
     gap: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .quizText {
     flex: 1;
+    text-align: center;
+    
 }
 
 .quizText p {
     margin: 0;
-    font-size: 0.95rem;
+    font-size: 14px;
     line-height: 1.4;
 }
 
 .quizButton {
-    margin-top: 0.5rem;
+    margin-top: 2rem;
     background-color: #4caf50;
     color: white;
+    width: 158px;
+    height: 48.115px;
+    flex-shrink: 0;
     border: none;
     padding: 0.5rem 1rem;
-    border-radius: 6px;
+    border-radius: 3px;
     cursor: pointer;
-    font-weight: 500;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+    font-weight: 700;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .section {
@@ -140,4 +146,21 @@
 .articleCard p {
     padding: 0.75rem;
     font-size: 0.95rem;
+}
+
+.imageWrapper {
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+
+.teethPatch {
+    position: absolute;
+    bottom: 28px; /* Adjust until it aligns with the mouth */
+    left: 45px;   /* Adjust this too */
+    width: 20px;
+    height: 8px;
+    background: red;
+    border-radius: 50%;
+    z-index: 2;
 }
