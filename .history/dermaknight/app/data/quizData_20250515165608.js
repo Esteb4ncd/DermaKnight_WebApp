@@ -13,7 +13,7 @@ export const quizQuestions = [
   {
     id: 2,
     question: "Which is closest to your skin tone?",
-    isColorSwatch: true,
+    isc,
     options: [
       { id: 'a', text: "F8D0B2" },
       { id: 'b', text: "EBB691" },

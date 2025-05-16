@@ -36,7 +36,7 @@ export default function QuizPage() {
   };
 
   const currentQuestionData = quizQuestions[currentQuestion];
-  const isSkinToneQuestion = currentQuestionData.isColorSwatch === true;
+  const isSkinToneQuestion = currentQuestionData.is === 2;
 
   const router = useRouter();
   return (

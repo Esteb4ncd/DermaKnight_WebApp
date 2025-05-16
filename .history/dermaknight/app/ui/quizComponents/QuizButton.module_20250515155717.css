@@ -17,34 +17,34 @@
     border-right: 0;
     transition: all 0.2s ease;
 }
-
-.quizAnswerButton.active {
+  
+.toggleButton.active {
     background-color: var(--color-quiz-button-selected);  
     color: white;
 }
 
 /* Override active state for color swatches */
-.quizAnswerButton[style*="background-color: #"] {
+.toggleButton[style*="background-color: #"] {
     color: transparent; /* Hide any text */
     padding: 0; 
 }
 
-.quizAnswerButton[style*="background-color: #"].active {
+..quizAnswerButton[style*="background-color: #"].active {
     background-color: inherit; 
     border: 3px solid var(--color-quiz-button-selected);
 }
 
 
-.quizAnswerButton[style*="border-radius: 50%"] {
+.toggleButton[style*="border-radius: 50%"] {
     margin: 12px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.quizAnswerButton[style*="border-radius: 50%"]:hover {
+.toggleButton[style*="border-radius: 50%"]:hover {
     transform: scale(1.05);
 }
 
-.quizButton__swatch {
+.colorSwatch {
     height: 54px;
     width: 314px;
     padding: 0;
@@ -55,7 +55,7 @@
     transition: all 0.2s ease;
 }
 
-.quizButton__swatch.active {
+.colorSwatch.active {
 
     border: 3px solid var(--color-quiz-button-selected);
 }

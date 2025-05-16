@@ -4,7 +4,7 @@ import {useRouter} from 'next/navigation';
 
 import styles from '@/app/ui/quizComponents/QuizPage.module.css'; 
 import { useState } from 'react';
-import QuizButton from '@/app/ui/quizComponents/QuizButton';
+import QuizButton from '@app/';
 import ProgressBar from './ProgressBar';
 import { quizQuestions } from '@/app/data/quizData';
 
@@ -36,7 +36,7 @@ export default function QuizPage() {
   };
 
   const currentQuestionData = quizQuestions[currentQuestion];
-  const isSkinToneQuestion = currentQuestionData.isColorSwatch === true;
+  const isSkinToneQuestion = currentQuestionData.id === 2;
 
   const router = useRouter();
   return (
