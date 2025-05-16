@@ -27,13 +27,14 @@ export default function Sidebar() {
 
 
             <nav className="nav-links">
-              <a href="#">Home</a>
-              <a href="#">About Us</a>
-              <a href="#">Ingredients</a>
-              <a href="#">Skin Concerns</a>
+              <a href="homePage">Home</a>
+              <a href="homePage">Saved</a>
+              <a href="profile">Profile</a>
+              <a href="aboutUs">About Us</a>
+
             </nav>
 
-            <button className="quiz-btn">Skin Quiz</button>
+            <a href="quizStart"><button className="quiz-btn">Skin Quiz</button></a>
           </div>
         </div>
       </>

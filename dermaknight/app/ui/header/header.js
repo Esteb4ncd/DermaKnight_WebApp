@@ -23,8 +23,7 @@ export default function Header() {
                 </div>
 
                 <div className="header-right">
-                    <i className="fas fa-search"></i>
-                    <i className="fas fa-user-circle"></i>
+                    <a href="searchPage"><i className="fas fa-search"></i></a>
                 </div>
         </header>
 

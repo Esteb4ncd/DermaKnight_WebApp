@@ -99,6 +99,7 @@
   border: none;
   margin-top: -1rem;
   margin-bottom: 1rem;
+  margin-left: -0.65rem;
   cursor: pointer;
   scale: 1;
 }
@@ -153,7 +154,7 @@
   font-weight: 600;
   margin: 2rem 0;
   padding: 0.6rem 2rem;
-  margin-top: 2.5rem;
+  margin-top: 2.6rem;
   border-radius: 10px;
   border: none;
   width: fit-content;
