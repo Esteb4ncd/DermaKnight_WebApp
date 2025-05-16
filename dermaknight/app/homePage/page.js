@@ -21,7 +21,8 @@ return (
             <Image src="/images/quizCharacter.png" alt="Quiz Person" width={133} height={233} />
             <div className={styles.teethPatch}></div>
             <div className={styles.quizText}>
-                <p className= {styles.purpleText}>Skin feeling different lately?<br />Take the quiz again to update your results</p>
+                <p className= {styles.purpleText}>Skin feeling different lately?</p>
+                <p className= {styles.whiteText}>Take the quiz again to update your results</p>
                 <button className={styles.quizButton}>Retake Quiz</button>
             </div>
         </div>
@@ -32,11 +33,14 @@ return (
                 <h2 className={styles.heading2}>Quiz Findings</h2>
             </div>
             <div className={styles.findingsGrid}>
-                {['Dark Spots', 'Uneven Skin Tone',].map((label, i) => (
-                <div className={styles.findingCard} key={i}>
-                    <Image src={`/face-${i + 1}.png`} alt={label} width={60} height={60} />
-                    <p>{label}</p>
-                </div>
+                {[
+                    { label: 'Dark Spots', image: 'darkspots.png' },
+                    { label: 'Uneven Skin Tone', image: 'uneven.png' },
+                ].map((item, i) => (
+                    <div className={styles.findingCard} key={i} onClick={() => handleClick(item.label)}> 
+                    <Image src={`/images/${item.image}`} alt={item.label} width={74} height={74} />
+                    <p>{item.label}</p>
+                    </div>
                 ))}
             </div>
         </section>
