@@ -6,11 +6,13 @@ import Image from 'next/image';
 
 
 
+
 export default function HomePage() {
     const router = useRouter();
 return (
+    <div className={styles.centeredNoPad}>
     <div className={styles.container}>
-            <header className={styles.header}>
+            <header className={`${styles.header} centeredNoPad`}>
                 <div className={styles.nav}>
                     <h1 className={styles.logo}> EMMA HELP ME</h1>
                     <div className={styles.icons}>🔍 ❤️ 👤</div>
@@ -64,15 +66,15 @@ return (
             <div className={styles.articleGrid}>
             {[
                 {
-                    label: 'Harvard health Blog',
+                    label: 'Harvard Health Blog',
                     title: 'Acne: What you need to know',
-                    image: '/images/article1.jpg',
+                    image: '/images/harvardArticle.png',
                     link: 'https://www.health.harvard.edu/blog/acne-what-you-need-to-know-2019010315717',
                 },
                 {
                     label: 'AAD',
                     title: 'Skin Care Tips For Men',
-                    image: '/images/article2.jpg',
+                    image: '/images/manArticle.png',
                     link: 'https://www.aad.org/public/everyday-care/skin-care-basics/care/skin-care-for-men',
                 },
                 ].map((article, i) => (
@@ -94,6 +96,7 @@ return (
                 ))}
             </div>
         </section>
+    </div>
     </div>
     );
 }
