@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e8efff; /* light pastel blue */
+  padding: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header-left,
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    width: 24px;
+    height: 24px;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.header i {
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #333;
+}

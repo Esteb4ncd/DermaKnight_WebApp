@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import {useRouter} from 'next/navigation';
 
-
 // import the header component
 import Header from "@/app/ui/header/header.js";
 

@@ -15,8 +15,8 @@ export default function Header() {
         <header className="header">
             <div className="header-left">
                 <i className="fas fa-bars"></i>
-                <img src="/images/dermaKnightLogoAndName.svg" alt="logo" className="logo" />
-
+                <img src="/dermaKnightLogoAndName.svg" alt="logo" className="logo" />
+                <span className="brand">DermaKnight</span>
             </div>
             <div className="header-right">
                 <i className="fas fa-search"></i>

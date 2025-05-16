@@ -1,12 +1,10 @@
-/* .header {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #E0E8FF;
-    padding: 0.75rem 1rem;
+    padding: 1rem;
     font-family: 'Poppins', sans-serif;
-    min-height: 60px;
-    flex-wrap: nowrap;
 }
 
 .header-left,
@@ -17,19 +15,18 @@
 }
 
 .logo {
-    width: 28px;
-    height: 28px;
-    object-fit: contain;
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
 }
 
 .brand {
     font-weight: 700;
     font-size: 1.2rem;
-    margin-left: 0.5rem;
 }
 
 .header i {
     font-size: 1.2rem;
     cursor: pointer;
     color: #333;
-} */
+}

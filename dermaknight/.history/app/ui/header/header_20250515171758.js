@@ -12,18 +12,18 @@ export default function Header() {
     const router = useRouter();
 
     return (
-        <header className="header">
-            <div className="header-left">
-                <i className="fas fa-bars"></i>
-                <img src="/images/dermaKnightLogoAndName.svg" alt="logo" className="logo" />
-
-            </div>
-            <div className="header-right">
-                <i className="fas fa-search"></i>
-                <i className="far fa-heart"></i>
-                <i className="fas fa-user-circle"></i>
-            </div>
-        </header>
+            <header className="header">
+    <div className="header-left">
+        <i className="fas fa-bars"></i>
+        <img src="/logo_basic_1.png" alt="logo" className="logo" />
+        <span className="brand">DermaKnight</span>
+    </div>
+    <div className="header-right">
+        <i className="fas fa-search"></i>
+        <i className="far fa-heart"></i>
+        <i className="fas fa-user-circle"></i>
+    </div>
+</header>
 
     //         {/* <div className="">
     //             <section  className="padding-md">

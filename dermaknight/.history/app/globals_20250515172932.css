@@ -7,40 +7,7 @@
   background: white;
 }
 
-/* Header */
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #E0E8FF;
-    padding: 0.75rem 1rem;
-    font-family: 'Poppins', sans-serif;
-    min-height: 60px;
-    flex-wrap: nowrap;
-}
-
-.header-left,
-.header-right {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.logo {
-
-}
-
-.brand {
-    font-weight: 700;
-    font-size: 1.2rem;
-    margin-left: 0.5rem;
-}
-
-.header i {
-    font-size: 1.2rem;
-    cursor: pointer;
-    color: #333;
-}
+/*  */
 
 /* Category Page Styling */
 article, section {

@@ -2,21 +2,19 @@
 import React, { useState } from "react";
 import {useRouter} from 'next/navigation';
 
-// Styles import
-import styles from '@/app/ui/header/header.module.css';
-
-// Dopdown import
 import ToggleDropdown from '@/app/ui/toggleDropdown/toggleDropdown.js';
 
 export default function Header() {
     const router = useRouter();
 
     return (
-        <header className="header">
+        // Add the Header here
+        <div className="authContainer headerContainer">
+            <header className="header">
             <div className="header-left">
                 <i className="fas fa-bars"></i>
-                <img src="/images/dermaKnightLogoAndName.svg" alt="logo" className="logo" />
-
+                <img src="/logo.png" alt="logo" className="logo" />
+                <span className="brand">DermaKnight</span>
             </div>
             <div className="header-right">
                 <i className="fas fa-search"></i>
@@ -25,11 +23,14 @@ export default function Header() {
             </div>
         </header>
 
-    //         {/* <div className="">
-    //             <section  className="padding-md">
-    //                 <ToggleDropdown />
-    //             </section>
-    //         </div> */}
+            <div className="">
+                
+                {/* Toggled Section */}
+                <section  className="padding-md">
+                    <ToggleDropdown />
+                </section>
 
-)
+            </div>
+        </div>
+    );
 }
