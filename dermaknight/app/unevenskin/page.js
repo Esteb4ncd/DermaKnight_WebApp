@@ -1,7 +1,7 @@
 'use client'
 // import Image from "next/image";
-import styles from "./page.module.css";
-import Ingredients from "./ui/ingredientCard/ingredientCard";
+// import styles from "./page.module.css";
+import Ingredients from "@app//ui/ingredientCard/ingredientCard";
 import {useRouter} from 'next/navigation';
 
 
@@ -38,7 +38,7 @@ export default function Home() {
 
 
     return (
-    <div className={styles.authContainer}>
+    <div className={'auth-container'}>
         <header>
             <h1>Uneven Skin Tone</h1>
         </header>
@@ -74,7 +74,7 @@ export default function Home() {
 
 
 
-            <section className={styles.authContainer}>
+            <section className={'auth-container'}>
                 <h2 style={{ "text-align": "left" }}>Recommended Ingredients</h2>
                 <hr style={{ border: "none", borderTop: "1px solid black", margin: "0.4rem 0" }} />
 
