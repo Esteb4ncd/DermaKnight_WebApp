@@ -1,21 +1,24 @@
 "use client";
-import React, { useState } from "react";
-import {useRouter} from 'next/navigation';
-import styles from '@app/homePage/page.module.css';
+import { useRouter } from 'next/navigation';
 import Image from 'next/image';
-
-
-
+import styles from './page.module.css'; 
 
 export default function HomePage() {
     const router = useRouter();
+
     const handleClick = (label) => {
-        if (label === 'Dark Spots') {
-            router.push('/darkspots');
-        } else if (label === 'Uneven Skin Tone') {
-          router.push('/unevenskin'); // adjust if needed
-        }
-    };
+    if (label === 'Dark Spots') {
+        router.push('/darkspots');
+    } else if (label === 'Uneven Skin Tone') {
+        router.push('/unevenskin');
+    }
+};
+
+const handleQuizClick = () => {
+    router.push('/quizStart'); 
+};
+
+
 
 return (
     <div className={styles.centeredNoPad}>
@@ -33,7 +36,8 @@ return (
             <div className={styles.quizText}>
                 <p className= {styles.purpleText}>Skin feeling different lately?</p>
                 <p className= {styles.whiteText}>Take the quiz again to update your results</p>
-                <button className={styles.quizButton}>Retake Quiz</button>
+                <button className={styles.quizButton} onClick={handleQuizClick}>Retake Quiz</button>
+
             </div>
         </div>
 
