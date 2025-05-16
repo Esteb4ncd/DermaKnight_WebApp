@@ -5,24 +5,27 @@ import {useRouter} from 'next/navigation';
 // Styles import
 import styles from '@/app/ui/header/header.module.css';
 
-// Dopdown import
+// Component imports
+import sideBar from '@/app/ui/Sidebar/Sidebar.js';
 import ToggleDropdown from '@/app/ui/toggleDropdown/toggleDropdown.js';
+import Sidebar from "@/app/ui/Sidebar/Sidebar.js";
 
 export default function Header() {
     const router = useRouter();
 
     return (
         <header className="header">
-            <div className="header-left">
-                <i className="fas fa-bars"></i>
-                <img src="/images/dermaKnightLogoAndName.svg" alt="logo" className="logo" />
+                <div className="header-left">
+                    <div>
+                        <Sidebar />
+                    </div>
+                    <img src="/images/dermaKnightLogoAndName.svg" alt="logo" className="logo" />
+                </div>
 
-            </div>
-            <div className="header-right">
-                <i className="fas fa-search"></i>
-                <i className="far fa-heart"></i>
-                <i className="fas fa-user-circle"></i>
-            </div>
+                <div className="header-right">
+                    <i className="fas fa-search"></i>
+                    <i className="fas fa-user-circle"></i>
+                </div>
         </header>
 
     //         {/* <div className="">

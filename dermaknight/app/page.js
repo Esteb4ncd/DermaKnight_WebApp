@@ -4,6 +4,7 @@ import {useRouter} from 'next/navigation';
 
 
 // import the header component
+import Sidebar from "@/app/ui/Sidebar/Sidebar.js";
 import Header from "@/app/ui/header/header.js";
 
 // KEEP THIS LINE FOR THE HEADER TO WORK
@@ -15,8 +16,13 @@ export default function Page() {
     const router = useRouter();
 
     return (
-        <div className="authContainer">
-            <Header />
-        </div>
+        <>
+            <header>
+                <Header />
+            </header>
+            {/* <div className="authContainer">
+                <Sidebar />
+            </div> */}
+        </>
     );
 }
