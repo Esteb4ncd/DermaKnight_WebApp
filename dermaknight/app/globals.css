@@ -364,6 +364,7 @@ a {
 }
 
 .auth-btn.primary {
+  font-family: var(--font-main);
   background-color: #444752;
   color: #ffffff;
   border: none;

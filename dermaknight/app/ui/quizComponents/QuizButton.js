@@ -1,13 +1,13 @@
 'use client';
 
 import React from 'react';
-import styles from './QuizButton.module.css'; 
+import styles from '@/app/ui/quizComponents/QuizButton.module.css'; 
 
 export default function QuizButton({ text = "Click Me", isActive, onClick, isColorSwatch = false }) {
   return (
     <button
       onClick={onClick}
-      className={`${styles.toggleButton} ${isActive ? styles.active : ''} ${isColorSwatch ? styles.colorSwatch : 'bodyMedium'}`}
+      className={`${styles.quizAnswerButton} ${isActive ? styles.active : ''} ${isColorSwatch ? styles.quizButton__swatch : 'bodyMedium'}`}
       style={isColorSwatch ? { backgroundColor: `#${text}` } : {}}
     >
       {!isColorSwatch && text}
