@@ -67,13 +67,14 @@ export default function QuizPage() {
       </div>
 
       <div className={styles.buttonsContainer}>
+        {currentQuestion !== 0 && (
         <button 
           onClick={handlePreviousQuestion} 
-          disabled={currentQuestion === 0} 
           className={styles.previousButton}
         >
           <img src="/quizGraphics/previousButtonQuiz.svg" alt="Previous" />
         </button>
+        )}
         <button 
           onClick={handleNextQuestion} 
           disabled={!activeButton} 

@@ -7,7 +7,7 @@ export default function QuizButton({ text = "Click Me", isActive, onClick, isCol
   return (
     <button
       onClick={onClick}
-      className={`${styles.quizAnswerButton} ${isActive ? styles.active : ''} ${isColorSwatch ? styles.colorSwatch : 'bodyMedium'}`}
+      className={`${styles.quizAnswerButton} ${isActive ? styles.active : ''} ${isColorSwatch ? styles.quizButton__swatch : 'bodyMedium'}`}
       style={isColorSwatch ? { backgroundColor: `#${text}` } : {}}
     >
       {!isColorSwatch && text}
