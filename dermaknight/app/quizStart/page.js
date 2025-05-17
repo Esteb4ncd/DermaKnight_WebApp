@@ -2,8 +2,8 @@
 import {useRouter} from 'next/navigation';
 
 import React from 'react';
-import styles from '@/app/quizStart/page.module.css';
-import ExitButton from '@/app/ui/quizComponents/ExitButton';
+import styles from '@app/quizStart/page.module.css';
+import ExitButton from '@app/ui/quizComponents/ExitButton';
 
 
 
