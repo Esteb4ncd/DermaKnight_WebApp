@@ -152,9 +152,9 @@ export default function Home() {
                 </section>
 
             {/* Recommended Section */}
-                <section className="authContainer padding-md">
+                <section className="padding-md">
                     <hr style={{ border: "none", borderTop: "1px solid black", margin: "0.4rem 0" }}/>
-                    <h3 style={{ "text-align": "left" }}>Recommended Ingredients</h3>
+                    <h3 style={{ textAlign: "left" }}>Recommended Ingredients</h3>
                     <br></br>
 
                     {["Niacinamide"].map((key) => {

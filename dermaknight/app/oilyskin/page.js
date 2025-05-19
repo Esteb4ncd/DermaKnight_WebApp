@@ -86,8 +86,8 @@ export default function Home() {
 
 
 
-        <section className={styles.authContainer}>
-        <h3 style={{ "text-align": "left" }}>Recommended Ingredients</h3>
+        <section>
+        <h3 style={{ textAlign: "left" }}>Recommended Ingredients</h3>
         <hr style={{ border: "none", borderTop: "1px solid black", margin: "0.4rem 0" }} />
 
         {["Salicylic Acid", "Niacinamide"].map((key) => {
