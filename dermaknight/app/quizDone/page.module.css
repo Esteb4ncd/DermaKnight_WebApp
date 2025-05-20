@@ -1,0 +1,56 @@
+.container{
+    background-color: #ECE9EA;
+    height: 852px;
+}
+
+.logo img{
+    margin-top: 100px;
+}
+
+.text{
+    margin: 30px;
+}
+/* 
+Loading bar */
+.loadingDots {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+    height: 20px;
+    margin-top: 20px;
+  }
+  
+
+  .dot1,
+  .dot2,
+  .dot3 {
+    width: 10px;
+    height: 10px;
+    background-color: var(  --color-quiz-button-selected); 
+    border-radius: 50%;
+    animation: bounce 0.6s infinite;
+  }
+  
+  /* Individual animation delays */
+  .dot1 {
+    animation-delay: 0s;
+  }
+  
+  .dot2 {
+    animation-delay: 0.2s;
+  }
+  
+  .dot3 {
+    animation-delay: 0.4s;
+  }
+  
+  @keyframes bounce {
+    0%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+  }
+  
