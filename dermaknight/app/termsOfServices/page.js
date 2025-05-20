@@ -1,11 +1,27 @@
 
-import React from "react";
+"use client";
+// import React from "react";
+import React, { useState } from "react";
+import {useRouter} from 'next/navigation';
 
 import styles from '@app/termsOfServices/page.module.css';
 
 
+// KEEP THESE LINES FOR THE HEADER TO WORK
+// import the header component
+import Sidebar from "@app/ui/Sidebar/Sidebar.js";
+import Header from "@app/ui/header/header.js";
+
+import "@fortawesome/fontawesome-free/css/all.min.css"; 
+// ^^^^ KEEP THESE LINES FOR THE HEADER TO WORK ^^^^
+
 const TermsOfService = () => {
   return (
+    <div>
+      <header>
+        <Header />
+      </header>
+      
     <div className="auth-container">
       <h1 className={styles.header}>Terms Of Services</h1>
 
@@ -66,6 +82,7 @@ const TermsOfService = () => {
       <div>
         <img src="./images/bodyLogoWithName.svg" alt="DermaKnight Logo" className={styles.bodyLogo} />
       </div>
+    </div>
     </div>
   );
 };

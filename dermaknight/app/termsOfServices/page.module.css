@@ -1,13 +1,11 @@
 
 .header {
-    margin-left: -30px;
-    margin-right: -30px;
+
     text-align: left;}
 
 .text{
     text-align: left;
-    margin-left: -30px;
-    margin-right: -30px;
+
     margin-bottom:25px;
     font-size:  var(--text-body-medium);
 }
@@ -16,7 +14,7 @@
     margin-bottom:15px ;
     text-align: left;
     font-size:  var(--text-body-medium);
-    margin-right:-30px;
+
 }
 
 .text__ul li {
@@ -25,8 +23,7 @@
 }
 
 .subHeader{
-    margin-left: -30px;
-    margin-right: -30px;
+
     text-align: left;
     font-size:  var(--text-body-medium);
 
