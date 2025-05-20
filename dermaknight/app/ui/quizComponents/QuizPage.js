@@ -2,11 +2,12 @@
 import {useRouter} from 'next/navigation';
 
 
-import styles from '@/app/ui/quizComponents/QuizPage.module.css'; 
+import styles from '@app/ui/quizComponents/QuizPage.module.css'; 
 import { useState } from 'react';
-import QuizButton from './QuizButton';
-import ProgressBar from './ProgressBar';
-import { quizQuestions } from '@/app/data/quizData';
+import QuizButton from '@app/ui/quizComponents/QuizButton';
+import ProgressBar from '@/ui/quizComponents/ProgressBar';
+import ExitButton from '@app/ui/quizComponents/ExitButton';
+import {quizQuestions} from '@app/data/quizData';
 
 export default function QuizPage() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -36,7 +37,7 @@ export default function QuizPage() {
   };
 
   const currentQuestionData = quizQuestions[currentQuestion];
-  const isSkinToneQuestion = currentQuestionData.id === 2;
+  const isSkinToneQuestion = currentQuestionData.isColorSwatch === true;
 
   const router = useRouter();
   return (
@@ -47,9 +48,7 @@ export default function QuizPage() {
           currentQuestion={currentQuestion} 
           totalQuestions={quizQuestions.length} 
         />
-        <button className={styles.exitButton} onClick={() => router.push('/homePage')}>
-          <img src="/quizGraphics/exitFromQuiz.svg" alt="Exit Quiz" />
-        </button>
+        <ExitButton/>
       </div>
 
       <div className={styles.quizContent}>
@@ -68,20 +67,28 @@ export default function QuizPage() {
       </div>
 
       <div className={styles.buttonsContainer}>
+        {currentQuestion !== 0 && (
         <button 
           onClick={handlePreviousQuestion} 
-          disabled={currentQuestion === 0} 
           className={styles.previousButton}
         >
           <img src="/quizGraphics/previousButtonQuiz.svg" alt="Previous" />
         </button>
+        )}
+
         <button 
-          onClick={handleNextQuestion} 
-          disabled={!activeButton} 
-          className={styles.nextButton}
-        >
-          {currentQuestion === quizQuestions.length - 1 ? 'Submit' : 'Next'}
-        </button>
+  onClick={() => {
+    if (currentQuestion === quizQuestions.length - 1) {
+      router.push('/quizDone'); // Redirect to loading page
+    } else {
+      handleNextQuestion();     // Go to next question
+    }
+  }} 
+  disabled={!activeButton} 
+  className={styles.nextButton}
+>
+  {currentQuestion === quizQuestions.length - 1 ? 'Submit' : 'Next'}
+</button>
       </div>
     </div>
   );

@@ -591,6 +591,7 @@ a {
 }
 
 .auth-btn.primary {
+  font-family: var(--font-main);
   background-color: #444752;
   color: #ffffff;
   border: none;
@@ -630,3 +631,23 @@ a {
 }
 
 
+.sectionTitle {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 32px 0;
+}
+
+.sectionTitle::before,
+.sectionTitle::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1.5px solid #2c1b1b;
+  margin: 0 12px;
+}
+
+.sectionTitle span {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2c1b1b;
+}

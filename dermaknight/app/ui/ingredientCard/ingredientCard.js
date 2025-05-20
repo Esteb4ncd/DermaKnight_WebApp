@@ -1,4 +1,5 @@
-import styles from '@/app/ui/ingredientCard/ingredientCard.module.css';
+// import styles from '@/app/ui/ingredientCard/ingredientCard.module.css';
+import styles from "@app/ui/ingredientCard/ingredientCard.module.css";
 import Image from "next/image";
 
 function Ingredients({ name, image, description, onClick }) {

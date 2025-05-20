@@ -1,5 +1,9 @@
-"use client";
-import React, { useState } from "react";
+// "use client";
+// import React, { useState } from "react";
+'use client'
+// import Image from "next/image";
+// import styles from "./page.module.css";
+import Ingredients from "@app//ui/ingredientCard/ingredientCard";
 import {useRouter} from 'next/navigation';
 
 // import styles from "./page.module.css";
@@ -48,11 +52,15 @@ export default function Home() {
 
 
     return (
-            <div>
-                <header>
-                    <Header />
-                </header>
-            <div className="authContainer">
+//             <div>
+//                 <header>
+//                     <Header />
+//                 </header>
+//             <div className="authContainer">
+    <div className={'auth-container'}>
+        <header>
+            <h1>Uneven Skin Tone</h1>
+        </header>
 
             <h2>Uneven Skin Tone</h2>
     <main>
@@ -86,8 +94,10 @@ export default function Home() {
 
 
 
-            <section >
-                <h3 style={{ "text-align": "left" }}>Recommended Ingredients</h3>
+//             <section >
+//                 <h3 style={{ "text-align": "left" }}>Recommended Ingredients</h3>
+            <section className={'auth-container'}>
+                <h2 style={{ "text-align": "left" }}>Recommended Ingredients</h2>
                 <hr style={{ border: "none", borderTop: "1px solid black", margin: "0.4rem 0" }} />
 
                 {["Niacinamide", "Vitamin C", "Ceramides"].map((key) => {

@@ -14,13 +14,11 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    position: relative;
+    width: 100%;
 
 }
-.exitButton{
-    border:0;
-    background-color: transparent;
-    
-}
+
 
 .previousButton {
 
@@ -29,11 +27,11 @@
     border: 1px solid #444752;
     border-radius: 3px;
     background-color: #fff;
-    top:708;
+    margin-right: 10px;
+  
 }
 
 .nextButton {
-    margin-left: 10px;
     height: 49px;
     width: 234px;
     border: 0;
@@ -51,7 +49,7 @@
 
 .quizTitle {
     margin-bottom: 30px; 
-    margin-top: 64px;
+    margin-top: 30px;
     
 }
 
@@ -63,10 +61,6 @@
     margin-bottom: 32px; 
 }
 
-.progressBarandExitContainer {
-    position: relative;
-    width: 100%;
-}
 
 .exitButton {
     position: absolute;

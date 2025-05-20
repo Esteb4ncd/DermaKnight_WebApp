@@ -1,7 +1,11 @@
 'use client'
 // import Image from "next/image";
-import styles from "@/app/page.module.css";
-import Ingredients from "@/app/ui/ingredientCard/ingredientCard";
+// import styles from "@/app/page.module.css";
+// import Ingredients from "@/app/ui/ingredientCard/ingredientCard";
+
+// import styles from "./page.module.css";
+import Ingredients from "@app//ui/ingredientCard/ingredientCard";
+
 import {useRouter} from 'next/navigation';
 
 // KEEP THESE LINES FOR THE HEADER TO WORK
@@ -57,12 +61,16 @@ export default function Home() {
 
 
   return (
-            <div>
-                <header>
-                    <Header />
-                </header>
-            <div className="authContainer">
+//             <div>
+//                 <header>
+//                     <Header />
+//                 </header>
+//             <div className="authContainer">
 
+    <div className="auth-container">
+      <header>
+        <h1>Dark Spots</h1>
+      </header>
 
       <main>
       <h2>Dark Spots</h2>
@@ -93,8 +101,10 @@ export default function Home() {
 
 
 
-        <section>
-        <h3 style={{ textAlign: "left" }}>Recommended Ingredients</h3>
+//         <section>
+//         <h3 style={{ textAlign: "left" }}>Recommended Ingredients</h3>
+        <section className={'auth-container'}>
+        <h2 style={{ "text-align": "left" }}>Recommended Ingredients</h2>
         <hr style={{ border: "none", borderTop: "1px solid black", margin: "0.4rem 0" }} />
 
         {["Niacinamide", "Vitamin C", "Azelaic Acid"].map((key) => {
