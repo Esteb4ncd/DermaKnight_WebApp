@@ -29,7 +29,6 @@ export default function Sidebar() {
             <nav className="nav-links">
               <a href="homePage">Home</a>
               <a href="homePage">Saved</a>
-              <a href="profile">Profile</a>
               <a href="aboutUs">About Us</a>
               <a href="settings">Settings</a>
 
