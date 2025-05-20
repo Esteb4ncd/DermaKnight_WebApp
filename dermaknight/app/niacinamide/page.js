@@ -2,10 +2,18 @@
 import React, { useState } from "react";
 import {useRouter} from 'next/navigation';
 
-
 // import styles from "./page.module.css";
-import Ingredients from "../ui/ingredientCard/ingredientCard";
-import ToggleDropdown from "../ui/toggleDropdown/toggleDropdown";
+import Ingredients from '@/app/ui/ingredientCard/ingredientCard.js';
+import ToggleDropdown from '@/app/ui/toggleDropdown/toggleDropdown.js';
+
+
+// KEEP THESE LINES FOR THE HEADER TO WORK
+// import the header component
+import Sidebar from "@/app/ui/Sidebar/Sidebar.js";
+import Header from "@/app/ui/header/header.js";
+import "@fortawesome/fontawesome-free/css/all.min.css"; 
+// ^^^^ KEEP THESE LINES FOR THE HEADER TO WORK ^^^^
+
 
 const ingredients = [
     {
@@ -51,12 +59,13 @@ export default function Home() {
     const router = useRouter();
 
     return (
-        // Add the Header here
-        <div className="authContainer">
+        <div>
             <header>
-                <h1>Niacinamide</h1>
+                <Header />
             </header>
+        <div className="authContainer">
 
+                <h2>Niacinamide</h2>
             <main>
                 {/* Chips Section */}
                 <div className="chip-container">
@@ -67,7 +76,7 @@ export default function Home() {
                 
                 {/* Overview Section */}
                 <section className="padding-md">
-                    <h2 style={{ "text-align": "left" }}>Overview</h2>
+                    <h3 style={{ "text-align": "left" }}>Overview</h3>
                     <hr
                         style={{
                             border: "none",
@@ -115,7 +124,7 @@ export default function Home() {
                 {/* How It Works Section */}
                 <section className="padding-sm">
                     <hr style={{ border: "none", borderTop: "1px solid black", margin: "0.4rem 0", }}/>
-                    <h2 style={{ "text-align": "left", margin: "0.7rem 0 0.7rem 0" }}>How it Works</h2>
+                    <h3 style={{ "text-align": "left", margin: "0.7rem 0 0.7rem 0" }}>How it Works</h3>
                     <hr style={{ border: "none", borderTop: "1px solid black", margin: "0.4rem 0", }}/>
                     <img src='/ingredients/niacinamide.png'></img>
                     <hr style={{ border: "none", borderTop: "1px solid black", margin: "0.4rem 0", }}/>
@@ -123,7 +132,7 @@ export default function Home() {
 
                 {/* Not Recommended Section */}
                 <section className="authContainer padding-sm">
-                    <h2 style={{ "text-align": "left" }}>Do Not Combine With</h2>
+                    <h3 style={{ "text-align": "left" }}>Do Not Combine With</h3>
                     <br></br>
 
                     {["Vitamin C"].map((key) => {
@@ -149,9 +158,9 @@ export default function Home() {
                 </section>
 
                 {/* Recommended Section */}
-                <section className="authContainer padding-md">
+                <section className="padding-md">
                     <hr style={{ border: "none", borderTop: "1px solid black", margin: "0.4rem 0" }}/>
-                    <h2>Recommended Ingredients</h2>
+                    <h3 style={{ textAlign: "left" }}>Recommended Ingredients</h3>
                     <br></br>
 
                     {["Ceramides"].map((key) => {
@@ -169,5 +178,6 @@ export default function Home() {
                 </section>
             </main>
         </div>
+    </div>
     );
 }

@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import './toggleDropdown.module.css'; // Make sure to create this file or use module.css
+import '@/app/ui/toggleDropdown/toggleDropdown.module.css';
 
 export default function ToggleDropdown() {
     const [open, setOpen] = useState(false);
