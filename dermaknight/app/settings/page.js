@@ -1,6 +1,5 @@
 'use client';
-import styles from "@/app/page.module.css";
-import Ingredients from "@/app/ui/ingredientCard/ingredientCard";
+import Link from "next/link";
 import { useRouter } from 'next/navigation';
 
 // Header + Sidebar + FontAwesome
@@ -17,15 +16,15 @@ export default function SettingsMenu() {
                 <Header />
             </header>
 
-            <main className="authContainer">
+            <main>
                 <div className="settings-container">
                     <div className="settings-card">
-                        <MenuItem icon="fas fa-clipboard-list" label="Privacy Policy" />
-                        <MenuItem icon="fas fa-shield-alt" label="Terms of Services" />
-                        <MenuItem icon="fas fa-info-circle" label="About Us" />
+                        <a href="/privacyPolicy"><MenuItem icon="fas fa-clipboard-list" label="Privacy Policy" /></a>
+                        <a href="/termsOfService"><MenuItem icon="fas fa-shield-alt" label="Terms of Service"  /></a>
+                        <a  href="/aboutUs"><MenuItem icon="fas fa-info-circle" label="About Us" /></a>
                     </div>
                     <div className="settings-card">
-                        <MenuItem icon="fas fa-heart" label="Rate Us" />
+                        <a  href="https://ca.trustpilot.com/"><MenuItem icon="fas fa-heart" label="Rate Us" /></a>
                     </div>
                 </div>
             </main>
@@ -43,4 +42,19 @@ function MenuItem({ icon, label }) {
             <i className="fas fa-chevron-right"></i>
         </div>
     );
-}
+
+    if (external) {
+        return (
+        <a href={href} target="_blank" rel="noopener noreferrer" className="menu-link">
+            {content}
+        </a>
+        );
+    }
+
+        return (
+            <Link href={href || "#"} className="menu-link">
+            {content}
+            </Link>
+        );
+    }
+
