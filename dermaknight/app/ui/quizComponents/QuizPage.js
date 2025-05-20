@@ -75,13 +75,20 @@ export default function QuizPage() {
           <img src="/quizGraphics/previousButtonQuiz.svg" alt="Previous" />
         </button>
         )}
+
         <button 
-          onClick={handleNextQuestion} 
-          disabled={!activeButton} 
-          className={styles.nextButton}
-        >
-          {currentQuestion === quizQuestions.length - 1 ? 'Submit' : 'Next'}
-        </button>
+  onClick={() => {
+    if (currentQuestion === quizQuestions.length - 1) {
+      router.push('/quizDone'); // Redirect to loading page
+    } else {
+      handleNextQuestion();     // Go to next question
+    }
+  }} 
+  disabled={!activeButton} 
+  className={styles.nextButton}
+>
+  {currentQuestion === quizQuestions.length - 1 ? 'Submit' : 'Next'}
+</button>
       </div>
     </div>
   );
