@@ -6,8 +6,7 @@ export default function ResultsPage() {
     const router = useRouter();
 
     const handleSave = () => {
-    // You can add saving logic here if needed
-    router.push('/'); // or wherever you want to navigate next
+    router.push('homePage'); 
     };
 
 return (
@@ -30,13 +29,7 @@ return (
                 </div>
         </section>
 
-        <section className={styles.resultBlock}>
-            <h3 className={styles.title}>Oily Skin</h3>
-            <div className={styles.card}>
-            <span className={styles.ingredient}>Niacinamide</span>
-            <p><strong>Benefits:</strong> Brightens skin, reduces redness, controls oil, minimizes pores.</p>
-            </div>
-        </section>
+
 
         <button className={styles.saveButton} onClick={handleSave}>
             Save Results
