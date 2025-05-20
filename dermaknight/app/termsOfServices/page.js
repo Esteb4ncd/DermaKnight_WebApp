@@ -1,3 +1,4 @@
+
 import React from "react";
 
 import styles from '@app/termsOfServices/page.module.css';
@@ -70,4 +71,5 @@ const TermsOfService = () => {
 };
 
 export default TermsOfService;
+
 

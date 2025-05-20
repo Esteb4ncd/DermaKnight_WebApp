@@ -1,5 +1,6 @@
 'use client';
 import styles from '@app/aboutUs/page.module.css';
+import Divider from '@app/ui/divider/Divider';
 
 export default function AboutUs() {
   return (
@@ -13,7 +14,8 @@ export default function AboutUs() {
         </p>
       </div>
 
-      <div className={styles.divider}></div>
+      <Divider/>
+
 
       <div className={`${styles.textContainer} ${styles.ourMission}`}>
         <h3>Our Mission</h3>
@@ -28,7 +30,7 @@ export default function AboutUs() {
 
         <img src="./images/bodyLogoWithName.svg" alt="Body Logo With Name" className={styles.bodyLogo}></img>
 
-      <div className={styles.divider}></div>
+        <Divider/>
 
 
       <div className={`${styles.textContainer} ${styles.whyDermaKnight}`}>
