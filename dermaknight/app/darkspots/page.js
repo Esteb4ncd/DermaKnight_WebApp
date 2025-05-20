@@ -10,8 +10,8 @@ import {useRouter} from 'next/navigation';
 
 // KEEP THESE LINES FOR THE HEADER TO WORK
 // import the header component
-import Sidebar from "@/app/ui/Sidebar/Sidebar.js";
-import Header from "@/app/ui/header/header.js";
+import Sidebar from "@app/ui/Sidebar/Sidebar.js";
+import Header from "@app/ui/header/header.js";
 import "@fortawesome/fontawesome-free/css/all.min.css"; 
 // ^^^^ KEEP THESE LINES FOR THE HEADER TO WORK ^^^^
 
@@ -61,19 +61,16 @@ export default function Home() {
 
 
   return (
-//             <div>
-//                 <header>
-//                     <Header />
-//                 </header>
-//             <div className="authContainer">
+            <div>
+                <header>
+                    <Header />
+                </header>
+
 
     <div className="auth-container">
-      <header>
         <h1>Dark Spots</h1>
-      </header>
 
       <main>
-      <h2>Dark Spots</h2>
         <section>
         <h3 style={{ "text-align": "left" }}>Overview</h3>
         <hr style={{ border: "none", borderTop: "1px solid black", margin: "0.4rem 0" }} />
@@ -101,10 +98,8 @@ export default function Home() {
 
 
 
-//         <section>
-//         <h3 style={{ textAlign: "left" }}>Recommended Ingredients</h3>
-        <section className={'auth-container'}>
-        <h2 style={{ "text-align": "left" }}>Recommended Ingredients</h2>
+        <section>
+        <h3 style={{ "text-align": "left" }}>Recommended Ingredients</h3>
         <hr style={{ border: "none", borderTop: "1px solid black", margin: "0.4rem 0" }} />
 
         {["Niacinamide", "Vitamin C", "Azelaic Acid"].map((key) => {

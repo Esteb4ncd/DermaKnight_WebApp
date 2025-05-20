@@ -1,8 +1,8 @@
 .divider{
-    width: 390px;
+    width: 340px;
     height: 8px;
     background-color: var(  --color-button-bg);
     border-radius: 20px;
-    margin-left: -30px;
-    margin-right: -30px;
+    margin-left: 0px;
+    margin-right: 0px;
 }

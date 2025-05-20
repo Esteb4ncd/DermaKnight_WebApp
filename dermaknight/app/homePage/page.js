@@ -3,6 +3,11 @@ import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import styles from './page.module.css'; 
 
+// Header + Sidebar + FontAwesome
+import Sidebar from "@app/ui/Sidebar/Sidebar.js";
+import Header from "@app/ui/header/header.js";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+
 export default function HomePage() {
     const router = useRouter();
 
@@ -21,14 +26,12 @@ const handleQuizClick = () => {
 
 
 return (
+    <div>
+        <header>
+            <Header />
+        </header>
     <div className={styles.centeredNoPad}>
     <div className={styles.container}>
-            <header className={`${styles.header} centeredNoPad`}>
-                <div className={styles.nav}>
-                    <h1 className={styles.logo}> EMMA HELP ME</h1>
-                    <div className={styles.icons}>🔍 ❤️ 👤</div>
-                </div>
-            </header>
             
         <div className={styles.quizBanner}>
             <Image src="/images/quizCharacter.png" alt="Quiz Person" width={133} height={233} />
@@ -108,6 +111,7 @@ return (
                 ))}
             </div>
         </section>
+    </div>
     </div>
     </div>
     );

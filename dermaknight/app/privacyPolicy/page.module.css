@@ -1,6 +1,6 @@
 .header{
     text-align: left;
-    margin-left: -30px;
+    margin-left: 0px;
     margin-bottom: 20px;
 }
 
@@ -8,15 +8,14 @@
 .paragraph {
     text-align: left;
     margin-bottom: 25px;
-    margin-left: -30px;
-    margin-right: -30px;
+
   }
   
 .list {
     text-align: left;
     list-style-type: disc;
     padding-left: 20px;
-    margin: 0 -30px;
+
   }
   
 .list li {
@@ -26,7 +25,7 @@
 .strong {
     display: block;
     text-align: left;
-    margin: 20px -30px 10px -30px;
+    margin: 20px 0px 10px 0px;
 }
   
 .bodyLogo {
