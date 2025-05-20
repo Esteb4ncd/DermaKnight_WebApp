@@ -2,12 +2,12 @@
 import {useRouter} from 'next/navigation';
 
 
-import styles from '@/app/ui/quizComponents/QuizPage.module.css'; 
+import styles from '@app/ui/quizComponents/QuizPage.module.css'; 
 import { useState } from 'react';
-import QuizButton from '@/app/ui/quizComponents/QuizButton';
-import ProgressBar from './ProgressBar';
-import ExitButton from '@/app/ui/quizComponents/ExitButton';
-import { quizQuestions } from '@/app/data/quizData';
+import QuizButton from '@app/ui/quizComponents/QuizButton';
+import ProgressBar from '@/ui/quizComponents/ProgressBar';
+import ExitButton from '@app/ui/quizComponents/ExitButton';
+import {quizQuestions} from '@app/data/quizData';
 
 export default function QuizPage() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
