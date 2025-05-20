@@ -37,24 +37,10 @@ function MenuItem({ icon, label }) {
         <div className="menu-item">
             <div className="left">
                 <i className={icon}></i>
-                <span>{label}</span>
+                <span style={{ "font": "Lexend", fontWeight: "500", color: "#444752" }}>{label}</span>
             </div>
             <i className="fas fa-chevron-right"></i>
         </div>
     );
-
-    if (external) {
-        return (
-        <a href={href} target="_blank" rel="noopener noreferrer" className="menu-link">
-            {content}
-        </a>
-        );
-    }
-
-        return (
-            <Link href={href || "#"} className="menu-link">
-            {content}
-            </Link>
-        );
-    }
+}
 

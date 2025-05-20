@@ -292,11 +292,11 @@ header {
 }
 
 .settings-card {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   margin-bottom: 1.25rem;
   padding: 0.75rem 0;
+  border-radius: 12px;
+  border:rgba(0, 0, 0, 0.1) 2px solid;
+  background-color: #fff;
 }
 
 .menu-item {
@@ -306,7 +306,6 @@ header {
   padding: 0.75rem 1.25rem;
   color: #6c7893;
   border-radius: 14px;
-  /* box-shadow: ; */
   cursor: pointer;
   transition: background 0.2s ease;
 }
