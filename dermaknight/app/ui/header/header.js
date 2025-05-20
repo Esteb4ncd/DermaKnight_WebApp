@@ -3,12 +3,12 @@ import React, { useState } from "react";
 import {useRouter} from 'next/navigation';
 
 // Styles import
-import styles from '@/app/ui/header/header.module.css';
+import styles from '@app/ui/header/header.module.css';
 
 // Component imports
-import sideBar from '@/app/ui/Sidebar/Sidebar.js';
-import ToggleDropdown from '@/app/ui/toggleDropdown/toggleDropdown.js';
-import Sidebar from "@/app/ui/Sidebar/Sidebar.js";
+import sideBar from '@app/ui/Sidebar/Sidebar.js';
+import ToggleDropdown from '@app/ui/toggleDropdown/toggleDropdown.js';
+import Sidebar from "@app/ui/Sidebar/Sidebar.js";
 
 export default function Header() {
     const router = useRouter();

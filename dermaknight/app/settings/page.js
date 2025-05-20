@@ -3,8 +3,8 @@ import Link from "next/link";
 import { useRouter } from 'next/navigation';
 
 // Header + Sidebar + FontAwesome
-import Sidebar from "@/app/ui/Sidebar/Sidebar.js";
-import Header from "@/app/ui/header/header.js";
+import Sidebar from "@app/ui/Sidebar/Sidebar.js";
+import Header from "@app/ui/header/header.js";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 export default function SettingsMenu() {
@@ -17,10 +17,10 @@ export default function SettingsMenu() {
             </header>
 
             <main>
-                <div className="settings-container">
+                <div className="auth-container settings-container">
                     <div className="settings-card">
                         <a href="/privacyPolicy"><MenuItem icon="fas fa-clipboard-list" label="Privacy Policy" /></a>
-                        <a href="/termsOfService"><MenuItem icon="fas fa-shield-alt" label="Terms of Service"  /></a>
+                        <a href="/termsOfServices"><MenuItem icon="fas fa-shield-alt" label="Terms of Services"  /></a>
                         <a  href="/aboutUs"><MenuItem icon="fas fa-info-circle" label="About Us" /></a>
                     </div>
                     <div className="settings-card">

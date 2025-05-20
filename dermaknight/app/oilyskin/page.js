@@ -1,13 +1,13 @@
 'use client'
 // import Image from "next/image";
-import styles from "@/app/page.module.css";
-import Ingredients from "@/app/ui/ingredientCard/ingredientCard";
+import styles from "@app/page.module.css";
+import Ingredients from "@app/ui/ingredientCard/ingredientCard";
 import {useRouter} from 'next/navigation';
 
 // KEEP THESE LINES FOR THE HEADER TO WORK
 // import the header component
-import Sidebar from "@/app/ui/Sidebar/Sidebar.js";
-import Header from "@/app/ui/header/header.js";
+import Sidebar from "@app/ui/Sidebar/Sidebar.js";
+import Header from "@app/ui/header/header.js";
 import "@fortawesome/fontawesome-free/css/all.min.css"; 
 // ^^^^ KEEP THESE LINES FOR THE HEADER TO WORK ^^^^
 

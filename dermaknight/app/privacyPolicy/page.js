@@ -1,22 +1,24 @@
-// 'use client';
+'use client';
 // import Link from "next/link";
-// import { useRouter } from 'next/navigation';
+import { useRouter } from 'next/navigation';
 
-// // Header + Sidebar + FontAwesome
-// import Sidebar from "@/app/ui/Sidebar/Sidebar.js";
-// import Header from "@/app/ui/header/header.js";
-// import "@fortawesome/fontawesome-free/css/all.min.css";
+// Header + Sidebar + FontAwesome
+import Sidebar from "@app/ui/Sidebar/Sidebar.js";
+import Header from "@app/ui/header/header.js";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 
-// export default function PrivacyPage() {
-//     return <h1>Privacy Policy</h1>;
-// }
 import styles from '@app/privacyPolicy/page.module.css';
 import Divider from '@app/ui/divider/Divider';
 import React from 'react';
 
 export default function PrivacyPolicy() {
   return (
+    <div>
+      <header>
+        <Header />
+      </header>
+
     <div className="auth-container">
         <h1 className={styles.header}>Privacy Policy</h1>
       <p className={styles.paragraph}>
@@ -76,6 +78,7 @@ export default function PrivacyPolicy() {
       <div>
         <img src="./images/bodyLogoWithName.svg" alt="DermaKnight logo" className={styles.bodyLogo} />
       </div>
+    </div>
     </div>
   );
 }

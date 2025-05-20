@@ -3,18 +3,18 @@
 'use client'
 // import Image from "next/image";
 // import styles from "./page.module.css";
-import Ingredients from "@app//ui/ingredientCard/ingredientCard";
+// import Ingredients from "@app//ui/ingredientCard/ingredientCard";
 import {useRouter} from 'next/navigation';
 
 // import styles from "./page.module.css";
-import Ingredients from "@/app/ui/ingredientCard/ingredientCard";
-import ToggleDropdown from "@/app/ui/toggleDropdown/toggleDropdown";
+import Ingredients from "@app/ui/ingredientCard/ingredientCard";
+import ToggleDropdown from "@app/ui/toggleDropdown/toggleDropdown";
 
 
 // KEEP THESE LINES FOR THE HEADER TO WORK
 // import the header component
-import Sidebar from "@/app/ui/Sidebar/Sidebar.js";
-import Header from "@/app/ui/header/header.js";
+import Sidebar from "@app/ui/Sidebar/Sidebar.js";
+import Header from "@app/ui/header/header.js";
 import "@fortawesome/fontawesome-free/css/all.min.css"; 
 // ^^^^ KEEP THESE LINES FOR THE HEADER TO WORK ^^^^
 
@@ -94,8 +94,8 @@ export default function Home() {
 
 
 
-//             <section >
-//                 <h3 style={{ "text-align": "left" }}>Recommended Ingredients</h3>
+{/* //             <section >
+//                 <h3 style={{ "text-align": "left" }}>Recommended Ingredients</h3> */}
             <section className={'auth-container'}>
                 <h2 style={{ "text-align": "left" }}>Recommended Ingredients</h2>
                 <hr style={{ border: "none", borderTop: "1px solid black", margin: "0.4rem 0" }} />
@@ -116,6 +116,6 @@ export default function Home() {
             </section>
         </main>
     </div>
-    </div>
+    // {/* </div> */}
 )
 }

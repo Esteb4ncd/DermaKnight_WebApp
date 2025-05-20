@@ -1,9 +1,17 @@
 'use client';
 import styles from '@app/aboutUs/page.module.css';
 import Divider from '@app/ui/divider/Divider';
+// Header + Sidebar + FontAwesome
+import Sidebar from "@app/ui/Sidebar/Sidebar.js";
+import Header from "@app/ui/header/header.js";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 export default function AboutUs() {
   return (
+    <div>
+      <header>
+        <Header />
+      </header>
     <div className='auth-container'>
       <div className={`${styles.textContainer} ${styles.intro}`}>
         <h1>About Us</h1>
@@ -53,6 +61,7 @@ export default function AboutUs() {
           </li>
         </ul>
       </div>
+    </div>
     </div>
   );
 }

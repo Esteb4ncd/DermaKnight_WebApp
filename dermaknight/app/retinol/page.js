@@ -3,14 +3,14 @@ import React, { useState } from "react";
 import {useRouter} from 'next/navigation';
 
 // import styles from "./page.module.css";
-import Ingredients from "@/app/ui/ingredientCard/ingredientCard";
-import ToggleDropdown from "@/app/ui/toggleDropdown/toggleDropdown";
+import Ingredients from "@app/ui/ingredientCard/ingredientCard";
+import ToggleDropdown from "@app/ui/toggleDropdown/toggleDropdown";
 
 
 // KEEP THESE LINES FOR THE HEADER TO WORK
 // import the header component
-import Sidebar from "@/app/ui/Sidebar/Sidebar.js";
-import Header from "@/app/ui/header/header.js";
+import Sidebar from "@app/ui/Sidebar/Sidebar.js";
+import Header from "@app/ui/header/header.js";
 import "@fortawesome/fontawesome-free/css/all.min.css"; 
 // ^^^^ KEEP THESE LINES FOR THE HEADER TO WORK ^^^^
 
