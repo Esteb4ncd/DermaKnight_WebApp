@@ -7,6 +7,9 @@ This is  a skincare WebApp. It is meant for users whoare interested in learning 
 
 These are some extra artifacts that explain more abut the webApp and process of making it
 
+May have to download the following font for it to run (it was used for some of the icons):
+npm install @fortawesome/fontawesome-free
+
 Final Presentation:
 https://www.figma.com/slides/KFgGYoLsQDklmE4uUDkLjD/JS_Lords_FinalPresentation?node-id=5-637&t=tPuj0FTmBXMQhgEV-1
 
