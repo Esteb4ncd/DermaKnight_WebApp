@@ -19,7 +19,7 @@ const handleSubmit = (e) => {
 
 
 // input home page later
-    router.push('/');
+    router.push('homePage');
 };
 
 return (
